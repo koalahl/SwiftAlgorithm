@@ -21,6 +21,7 @@
 		1E7CDB8B1DE29EB1002B8999 /* BucketSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB841DE29EB1002B8999 /* BucketSort.swift */; };
 		1E7CDB8C1DE29EB1002B8999 /* InsertSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB851DE29EB1002B8999 /* InsertSort.swift */; };
 		1E7CDB8D1DE29EB1002B8999 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB861DE29EB1002B8999 /* QuickSort.swift */; };
+		1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1E7CDB841DE29EB1002B8999 /* BucketSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketSort.swift; sourceTree = "<group>"; };
 		1E7CDB851DE29EB1002B8999 /* InsertSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertSort.swift; sourceTree = "<group>"; };
 		1E7CDB861DE29EB1002B8999 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				1E7CDB841DE29EB1002B8999 /* BucketSort.swift */,
 				1E7CDB851DE29EB1002B8999 /* InsertSort.swift */,
 				1E7CDB861DE29EB1002B8999 /* QuickSort.swift */,
+				1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				1E7CDB8D1DE29EB1002B8999 /* QuickSort.swift in Sources */,
 				1E7CDB8B1DE29EB1002B8999 /* BucketSort.swift in Sources */,
 				1E7CDB8C1DE29EB1002B8999 /* InsertSort.swift in Sources */,
+				1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */,
 				1E7CDB881DE29EB1002B8999 /* Stack.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
 				1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */,

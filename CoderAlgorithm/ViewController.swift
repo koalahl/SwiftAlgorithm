@@ -57,8 +57,8 @@ class ViewController: UIViewController {
 //        let result = quickSort(bbsss)
 //        print(result)
         
-        let result = quickSort(array: xxArray)
-        print(result)
+//        let result = quickSort(array: xxArray)
+//        print(result)
 //        quickSortLomuto(&xxArray, low: 0, high: xxArray.count-1)
 //        print(xxArray)
         
@@ -74,8 +74,8 @@ class ViewController: UIViewController {
       
         */
         
-        let result2 = bucketSort(input: xxArray,maxValue: 50)
-        print(result2)
+//        let result2 = bucketSort(input: xxArray,maxValue: 50)
+//        print(result2)
         
     }
 

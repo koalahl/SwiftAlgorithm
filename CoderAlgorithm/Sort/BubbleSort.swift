@@ -12,13 +12,17 @@ import Foundation
 
 func bubbleSort<T:Comparable>(array:[T]) -> [T] {
     var a = array
-    
-    for i in 0..<a.count-1 {
-        for j in i+1..<a.count {
+    for n in 0..<a.count {
+        print("第\(n)次")
+        for i in 0..<a.count - 1 {
+            let j = i + 1
+            print("---i *** j = \(i)  \(j)")
             if a[j] < a[i] {
                 swap(&a[i], &a[j])
+                
             }
         }
     }
+    
     return a
 }
