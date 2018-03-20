@@ -7,11 +7,15 @@
 //
 
 import Foundation
-//冒泡排序
-/*This is a horrible algorithm. There is no reason why you should have to know it.*/
+/*冒泡排序
+This is a horrible algorithm. There is no reason why you should have to know it.
+ 时间复杂度：O(n^2)
+ 
+ */
 
 func bubbleSort<T:Comparable>(array:[T]) -> [T] {
     var a = array
+    let startTime = CFAbsoluteTimeGetCurrent()
     for n in 0..<a.count {
         print("第\(n)次")
         for i in 0..<a.count - 1 {
@@ -23,6 +27,7 @@ func bubbleSort<T:Comparable>(array:[T]) -> [T] {
             }
         }
     }
-    
+    let finishTime = CFAbsoluteTimeGetCurrent()
+    print("BubbleSort Time =",finishTime - startTime)
     return a
 }

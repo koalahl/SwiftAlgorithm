@@ -29,19 +29,24 @@ class ViewController: UIViewController {
         
          */
         
-        let xxArray = [12, 43, 5, 7, 21, 3, 17,8, 23, 29, 31, 47, 41, 43, 10, 28, 22, 16, 15]
+        //let xxArray = [12, 43, 5, 7, 21, 3, 17,8, 23, 29, 31, 47, 41, 43, 10, 28, 22, 16, 15]
+        var xxArray = generateRandomArray(n: 10000, left: 1, right: 10000)
+        
+//
+//        let numbers = selectionSort(array: xxArray)
+//
+//        /*--------InsertSort-------*/
+//
+//        let arr1 = insertSort2(array:xxArray)
+//
+//
+        let startTime = CFAbsoluteTimeGetCurrent()
+        let arr2 = mergeSort(array: xxArray)
+        
+        let finishTime = CFAbsoluteTimeGetCurrent()
+        print("mergeSort Time =",finishTime - startTime)
 
-
-        /*--------InsertSort-------*/
-//        var bbsss = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
-
-//        let numbers = [7,2,90,44,21,8]
-//        let arr = insertSort(numbers)
-//        print(arr)
-//        
-//        let arr1 = insertSort2(numbers)
-//        print(arr1)
-//        
+//
 //        let arr2 = insertSort(numbers) { (x, y) -> Bool in
 //            return x > y
 //        }
@@ -59,11 +64,20 @@ class ViewController: UIViewController {
         
 //        let result = quickSort(array: xxArray)
 //        print(result)
-//        quickSortLomuto(&xxArray, low: 0, high: xxArray.count-1)
-//        print(xxArray)
-        
-        let result1 = bubbleSort(array: xxArray)
-        print(result1)
+        let startTime1 = CFAbsoluteTimeGetCurrent()
+        quickSort(array: xxArray)
+        let finishTime1 = CFAbsoluteTimeGetCurrent()
+        print("quickSort Time =",finishTime1 - startTime1)
+
+        let startTime2 = CFAbsoluteTimeGetCurrent()
+
+        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
+        //print(xxArray)
+        let finishTime2 = CFAbsoluteTimeGetCurrent()
+        print("quickSortLomuto Time =",finishTime2 - startTime2)
+
+//        let result1 = bubbleSort(array: xxArray)
+//        print(result1)
         /*
         //1.two sum
         let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]
@@ -84,6 +98,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func generateRandomArray(n:Int,left:Int,right:Int) -> [Int] {
+        var a = [Int](repeating:0, count:n)
+        //生成n个介于left和right之间的元素
+        for i in 0..<n {
+            a[i] = Int(arc4random_uniform(UInt32(right))) % (right-left-1) + left
+        }
+        return a
+    }
 
 }
 
