@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         
          */
         
-        //let xxArray = [12, 43, 5, 7, 21, 3, 17,8, 23, 29, 31, 47, 41, 43, 10, 28, 22, 16, 15]
-        var xxArray = generateRandomArray(n: 10000, left: 1, right: 10000)
+        //var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
+        var xxArray = generateRandomArray(n: 100, left: 1, right: 100)
         
 //
 //        let numbers = selectionSort(array: xxArray)
@@ -40,44 +40,49 @@ class ViewController: UIViewController {
 //        let arr1 = insertSort2(array:xxArray)
 //
 //
-        let startTime = CFAbsoluteTimeGetCurrent()
-        let arr2 = mergeSort(array: xxArray)
-        
-        let finishTime = CFAbsoluteTimeGetCurrent()
-        print("mergeSort Time =",finishTime - startTime)
-
-//
 //        let arr2 = insertSort(numbers) { (x, y) -> Bool in
 //            return x > y
 //        }
 //        print(arr2)
-//        
+//
 //        let arr3 = insertSort(numbers) { $0<$1 }
 //        print(arr3)
-//        
+//
+//        ---- merge sort ----
+//        let startTime = CFAbsoluteTimeGetCurrent()
+//        let arr2 = mergeSort(array: xxArray)
+//
+//        let finishTime = CFAbsoluteTimeGetCurrent()
+//        print("mergeSort Time =",finishTime - startTime)
+
+
 //
 //        let index = binarySearch(bbsss, SearchKey: 59, Range: 0..<bbsss.count)
 //        print(index)
-//        
+        
+//        ---- quick sort -----
 //        let result = quickSort(bbsss)
 //        print(result)
-        
 //        let result = quickSort(array: xxArray)
 //        print(result)
         let startTime1 = CFAbsoluteTimeGetCurrent()
-        quickSort(array: xxArray)
+        let result = quickSort(array: xxArray)
         let finishTime1 = CFAbsoluteTimeGetCurrent()
         print("quickSort Time =",finishTime1 - startTime1)
-
-        let startTime2 = CFAbsoluteTimeGetCurrent()
-
-        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
-        //print(xxArray)
-        let finishTime2 = CFAbsoluteTimeGetCurrent()
-        print("quickSortLomuto Time =",finishTime2 - startTime2)
+        print(result)
+//
+//        let startTime2 = CFAbsoluteTimeGetCurrent()
+//
+//        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
+//        //print(xxArray)
+//        let finishTime2 = CFAbsoluteTimeGetCurrent()
+//        print("quickSortLomuto Time =",finishTime2 - startTime2)
 
 //        let result1 = bubbleSort(array: xxArray)
 //        print(result1)
+        
+        let kthElement =  findKthElement(in: &xxArray, k: 30)
+        print(kthElement)
         /*
         //1.two sum
         let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]

@@ -48,3 +48,29 @@ func quickSortLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Void {
         quickSortLomuto(array: &array, low: p+1, high: high)
     }
 }
+
+/*
+ N个数中寻找第K大的元素
+ 1. 使用快速排序
+ 核心思想：快速排序每次分组之后返回的i值（分隔索引）也是该元素在整个数组排序完成之后的位置，不会改变。所以我们只要在相应区间范围内查找，可以减少查找时间，而不用等整个数组排完序。
+ */
+func quickSortKth<T:Comparable>( array:inout [T],low:Int,high:Int,k:Int) -> Void {
+    if low < high {
+        let p = partitionLomuto(array: &array, low: low, high: high)
+        if p > k {
+            quickSortKth(array: &array, low: low, high: p-1,k:k)
+        }else if p < k{
+            quickSortKth(array: &array, low: p+1, high: high,k:k)
+        }
+        else if p == k {return}
+
+    }
+    return
+}
+func findKthElement<T:Comparable>(in array:inout [T],k:Int) -> T {
+    guard k < array.count else {
+        return 65535 as! T
+    }
+    quickSortKth(array: &array, low: 0, high: array.count-1, k: k)
+    return array[k]
+}
