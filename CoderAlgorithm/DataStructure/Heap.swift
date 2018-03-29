@@ -8,7 +8,7 @@
 
 import Foundation
 
-//普通堆：一颗完全二叉树，swift构建时，从0开始标记索引，视频上是从1开始。
+/// 普通堆：一颗完全二叉树，swift构建时，从0开始标记索引，视频上是从1开始。
 struct Heap<T:Comparable> {
     private var list = [T?]()
 
@@ -32,7 +32,8 @@ struct Heap<T:Comparable> {
     }
     //出堆：移除堆的首个元素
     public mutating func extract() {
-        list.removeFirst()
+        //将堆末尾的元素赋给根节点
+        list[0] = list.removeLast()
     }
 }
 /// 最大堆
@@ -90,18 +91,17 @@ struct MaxHeap<T:Comparable> {
     }
     //向下
     fileprivate mutating func shiftDown (){
-        var i = 0
-        var k = 0
+        var i = 0, k = 0
+        //满足条件：当前位置没有
         while leftChildNodeIndex(i) < self.count && rightChildNodeIndex(i) < self.count{
             let maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
             k = list.index(of: maxChileNode)!
             if self.orderCriteria( maxChileNode,list[i]) {
                 list.swapAt(i, k)
             }
+            //交换完之后将子节点的位置赋给i，然后再从i索引继续
             i = k
         }
-        
-        
     }
 
 }

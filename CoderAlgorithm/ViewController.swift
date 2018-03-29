@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         
         var maxheap = MaxHeap<Int>(sort:>)//最大堆
         var minheap = MaxHeap<Int>(sort:<)//最小堆
-        for i in 0..<10 {
+        for i in 0..<31 {
             maxheap.insert(element: Int(arc4random_uniform(100))+i)
         }
         
