@@ -22,7 +22,7 @@ func bubbleSort<T:Comparable>(array:[T]) -> [T] {
             let j = i + 1
             print("---i *** j = \(i)  \(j)")
             if a[j] < a[i] {
-                swap(&a[i], &a[j])
+                a.swapAt(i,j)
                 
             }
         }

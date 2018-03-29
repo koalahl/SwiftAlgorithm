@@ -22,7 +22,7 @@ func selectionSort<T:Comparable>(array:[T]) ->[T]{
     for i in 0..<a.count-1 {
         for j in i+1..<a.count {
             if a[j] < a[i] {
-                swap(&a[i], &a[j])
+                a.swapAt(i, j)
 
             }
         }

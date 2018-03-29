@@ -26,6 +26,11 @@ func quickSort<T:Comparable>( array:[T]) -> [T] {
 }
 /*
  第二种快速排序方式：经典方法
+ 
+ 快速排序
+ 时间复杂度：最优：O(NlogN),最差：O(N^2)
+ 空间复杂度：最优：O(logN), 最差：O(N)
+ 参考：https://blog.csdn.net/weshjiness/article/details/8660583
  */
 func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
     let pivot = array[high]

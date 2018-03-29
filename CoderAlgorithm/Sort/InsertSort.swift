@@ -26,7 +26,7 @@ public  func insertSort<T:Comparable>( array:[T]) -> [T] {
         var x = i
         //判决条件
         while x > 0 && a[x] < a[x-1]{
-            swap(&a[x], &a[x-1])
+            a.swapAt(x, x-1)
             x -= 1
         }
     }
