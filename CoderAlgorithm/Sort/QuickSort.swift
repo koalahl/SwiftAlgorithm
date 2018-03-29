@@ -32,7 +32,7 @@ func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
     
     var i = low
     for j  in low..<high {
-        if array[j] <= pivot {
+        if array[j] >= pivot {
             (array[i],array[j]) = (array[j],array[i])
             i += 1
         }
@@ -72,5 +72,5 @@ func findKthElement<T:Comparable>(in array:inout [T],k:Int) -> T {
         return 65535 as! T
     }
     quickSortKth(array: &array, low: 0, high: array.count-1, k: k)
-    return array[k]
+    return array[k-1]
 }
