@@ -61,24 +61,7 @@ struct MaxHeap<T:Comparable> {
     fileprivate func parentNodeIndex(_ index:Int) -> Int {
         return (index-1)/2
     }
-    //向上
-    fileprivate mutating func shiftUp(index:Int){
-        var i = index
-        while i > 0 &&   self.orderCriteria(list[i],list[parentNodeIndex(i)]) {
-            list.swapAt(i, parentNodeIndex(i))
-            i = parentNodeIndex(i)
-        }
-    }
-    //向下
-    fileprivate mutating func shiftDown (){
-        for i in 0..<list.count {
-            let maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
-            let k = list.index(of: maxChileNode)
-            if self.orderCriteria( list[i] , maxChileNode) {
-                list.swapAt(i, k!)
-            }
-        }
-    }
+
     //入堆：加入到list末尾
     public mutating func insert(element:T) {
         list.append(element)
@@ -91,12 +74,35 @@ struct MaxHeap<T:Comparable> {
         guard !list.isEmpty else {
             return print("Heap is empty!")
         }
-        list[0] = list.last!
-        
+        //将堆末尾的元素赋给根节点
+        list[0] = list.removeLast()
         //
         shiftDown()
     }
     
+    //向上
+    fileprivate mutating func shiftUp(index:Int){
+        var i = index
+        while i > 0 &&   self.orderCriteria(list[i],list[parentNodeIndex(i)]) {
+            list.swapAt(i, parentNodeIndex(i))
+            i = parentNodeIndex(i)
+        }
+    }
+    //向下
+    fileprivate mutating func shiftDown (){
+        var i = 0
+        var k = 0
+        while leftChildNodeIndex(i) < self.count && rightChildNodeIndex(i) < self.count{
+            let maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
+            k = list.index(of: maxChileNode)!
+            if self.orderCriteria( maxChileNode,list[i]) {
+                list.swapAt(i, k)
+            }
+            i = k
+        }
+        
+        
+    }
 
 }
 
