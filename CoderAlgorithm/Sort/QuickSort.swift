@@ -34,10 +34,10 @@ func quickSort<T:Comparable>( array:[T]) -> [T] {
  */
 func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
     let pivot = array[high]
-    
+
     var i = low
     for j  in low..<high {
-        if array[j] >= pivot {
+        if array[j] >= pivot { //从大到小排序，即较大的数往前挪
             (array[i],array[j]) = (array[j],array[i])
             i += 1
         }
@@ -45,11 +45,11 @@ func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
     (array[i],array[high]) = (array[high],array[i])
     return i
 }
-
+//[5,7,3,8,9,4]
 func quickSortLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Void {
     if low < high {
         let p = partitionLomuto(array: &array, low: low, high: high)
-        quickSortLomuto(array: &array, low: low, high: p-1)
+        quickSortLomuto(array: &array, low: low, high: p-1)//注意这里high的值是p-1，因为p位置上的值是上一次patition的pivot基准数，已经做过比较了。同理下面一行
         quickSortLomuto(array: &array, low: p+1, high: high)
     }
 }

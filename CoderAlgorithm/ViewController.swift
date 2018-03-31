@@ -30,7 +30,7 @@ class ViewController: UIViewController {
          */
         
         //var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
-        var xxArray = generateRandomArray(n: 100, left: 1, right: 100)
+        //var xxArray = generateRandomArray(n: 100, left: 1, right: 100)
         
 //
 //        let numbers = selectionSort(array: xxArray)
@@ -65,24 +65,26 @@ class ViewController: UIViewController {
 //        print(result)
 //        let result = quickSort(array: xxArray)
 //        print(result)
-        let startTime1 = CFAbsoluteTimeGetCurrent()
-        let result = quickSort(array: xxArray)
-        let finishTime1 = CFAbsoluteTimeGetCurrent()
-        print("quickSort Time =",finishTime1 - startTime1)
-        print(result)
+
+//        let startTime1 = CFAbsoluteTimeGetCurrent()
+//        let result = quickSort(array: xxArray)
+//        let finishTime1 = CFAbsoluteTimeGetCurrent()
+//        print("quickSort Time =",finishTime1 - startTime1)
+//        print(result)
 //
-//        let startTime2 = CFAbsoluteTimeGetCurrent()
-//
-//        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
-//        //print(xxArray)
-//        let finishTime2 = CFAbsoluteTimeGetCurrent()
-//        print("quickSortLomuto Time =",finishTime2 - startTime2)
+        var xxArray = [5,7,3,8,9,4]
+        let startTime2 = CFAbsoluteTimeGetCurrent()
+
+        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
+        print(xxArray)
+        let finishTime2 = CFAbsoluteTimeGetCurrent()
+        print("quickSortLomuto Time =",finishTime2 - startTime2)
 
 //        let result1 = bubbleSort(array: xxArray)
 //        print(result1)
         
-        let kthElement =  findKthElement(in: &xxArray, k: 30)
-        print("寻找N个元素中第K大个数：",kthElement)
+//        let kthElement =  findKthElement(in: &xxArray, k: 30)
+//        print("寻找N个元素中第K大个数：",kthElement)
         
         /*
         //1.two sum
@@ -97,17 +99,17 @@ class ViewController: UIViewController {
 //        let result2 = bucketSort(input: xxArray,maxValue: 50)
 //        print(result2)
         
-        var maxheap = MaxHeap<Int>(sort:>)//最大堆
-        var minheap = MaxHeap<Int>(sort:<)//最小堆
-        for i in 0..<31 {
-            maxheap.insert(element: Int(arc4random_uniform(100))+i)
-        }
-        
-        print(maxheap)
-        
-        maxheap.extract()
-        
-        print(maxheap)
+//        var maxheap = MaxHeap<Int>(sort:>)//最大堆
+//        var minheap = MaxHeap<Int>(sort:<)//最小堆
+//        for i in 0..<31 {
+//            maxheap.insert(element: Int(arc4random_uniform(100))+i)
+//        }
+//
+//        print(maxheap)
+//
+//        maxheap.extract()
+//
+//        print(maxheap)
         
     }
 
