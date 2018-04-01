@@ -73,12 +73,12 @@ class ViewController: UIViewController {
 //        print(result)
 //
         var xxArray = [5,7,3,8,9,4]
-        let startTime2 = CFAbsoluteTimeGetCurrent()
-
-        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
-        print(xxArray)
-        let finishTime2 = CFAbsoluteTimeGetCurrent()
-        print("quickSortLomuto Time =",finishTime2 - startTime2)
+//        let startTime2 = CFAbsoluteTimeGetCurrent()
+//
+//        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
+//        print(xxArray)
+//        let finishTime2 = CFAbsoluteTimeGetCurrent()
+//        print("quickSortLomuto Time =",finishTime2 - startTime2)
 
 //        let result1 = bubbleSort(array: xxArray)
 //        print(result1)
@@ -86,31 +86,39 @@ class ViewController: UIViewController {
 //        let kthElement =  findKthElement(in: &xxArray, k: 30)
 //        print("寻找N个元素中第K大个数：",kthElement)
         
-        /*
-        //1.two sum
-        let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]
-        let target = 200
-        let result = Two_Sum().twoSum(nums,target)
-        print(result)
-        
-      
-        */
+
         
 //        let result2 = bucketSort(input: xxArray,maxValue: 50)
 //        print(result2)
         
-//        var maxheap = MaxHeap<Int>(sort:>)//最大堆
-//        var minheap = MaxHeap<Int>(sort:<)//最小堆
-//        for i in 0..<31 {
-//            maxheap.insert(element: Int(arc4random_uniform(100))+i)
-//        }
-//
-//        print(maxheap)
-//
-//        maxheap.extract()
-//
-//        print(maxheap)
+        var maxheap = MaxHeap<Int>(sort:>)//最大堆
+        var minheap = MaxHeap<Int>(sort:<)//最小堆
+        for i in 0..<31 {
+            maxheap.insert(element: Int(arc4random_uniform(100))+i)
+        }
+
+        print(maxheap)
+
+        maxheap.extract()
+
+        print(maxheap)
         
+        
+        
+        HeapSort1(array: &xxArray)
+        print(xxArray)
+        
+        //leetcode
+
+        /*
+         //1.two sum
+         let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]
+         let target = 200
+         let result = Two_Sum().twoSum(nums,target)
+         print(result)
+         
+         
+         */
     }
 
     override func didReceiveMemoryWarning() {

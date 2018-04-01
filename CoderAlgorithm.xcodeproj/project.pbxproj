@@ -23,6 +23,7 @@
 		1E7CDB8D1DE29EB1002B8999 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB861DE29EB1002B8999 /* QuickSort.swift */; };
 		1E7F3022206BD8200044B5AD /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F3021206BD8200044B5AD /* Heap.swift */; };
 		1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */; };
+		1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94CE6C2070B4DA00625560 /* HeapSort.swift */; };
 		1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB6BA1205D0980003E4027 /* MergeSort.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		1E7CDB861DE29EB1002B8999 /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		1E7F3021206BD8200044B5AD /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
+		1E94CE6C2070B4DA00625560 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		1EEB6BA1205D0980003E4027 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				1E7CDB861DE29EB1002B8999 /* QuickSort.swift */,
 				1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */,
 				1EEB6BA1205D0980003E4027 /* MergeSort.swift */,
+				1E94CE6C2070B4DA00625560 /* HeapSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				1E7CDB881DE29EB1002B8999 /* Stack.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
+				1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */,
 				1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */,
 				1E34E42A1CE36E49004F5C98 /* 1Two Sum.swift in Sources */,
 				1E7CDB8A1DE29EB1002B8999 /* BubbleSort.swift in Sources */,

@@ -71,14 +71,22 @@ struct MaxHeap<T:Comparable> {
         
     }
     //出堆：移除堆的首个元素
-    public mutating func extract() {
+    public mutating func extract() -> T?{
         guard !list.isEmpty else {
-            return print("Heap is empty!")
+            return nil
         }
+        //如果当前堆中只有一个元素了，就直接返回了
+        if list.count == 1 {
+            return list[0]
+        }
+        //主要过程：
+        let item = list[0]
         //将堆末尾的元素赋给根节点
         list[0] = list.removeLast()
-        //
-        shiftDown()
+        //向下更新堆
+        shiftDown(0)
+
+        return item
     }
     
     //向上
@@ -90,8 +98,8 @@ struct MaxHeap<T:Comparable> {
         }
     }
     //向下
-    fileprivate mutating func shiftDown (){
-        var i = 0, k = 0
+    fileprivate mutating func shiftDown (_ index:Int){
+        var i = index, k = index
         //满足条件：当前位置没有
         while leftChildNodeIndex(i) < self.count && rightChildNodeIndex(i) < self.count{
             let maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
