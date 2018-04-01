@@ -29,9 +29,13 @@ class ViewController: UIViewController {
         
          */
         
-        //var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
-        //var xxArray = generateRandomArray(n: 100, left: 1, right: 100)
+//        var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
+        var xxArray = generateRandomArray(n: 10000, left: 1, right: 10000)
         
+        
+        
+//        let result2 = bucketSort(input: xxArray,maxValue: 50)
+//        print(result2)
 //
 //        let numbers = selectionSort(array: xxArray)
 //
@@ -72,9 +76,9 @@ class ViewController: UIViewController {
 //        print("quickSort Time =",finishTime1 - startTime1)
 //        print(result)
 //
-        var xxArray = [5,7,3,8,9,4]
 //        let startTime2 = CFAbsoluteTimeGetCurrent()
 //
+        
 //        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
 //        print(xxArray)
 //        let finishTime2 = CFAbsoluteTimeGetCurrent()
@@ -85,28 +89,41 @@ class ViewController: UIViewController {
         
 //        let kthElement =  findKthElement(in: &xxArray, k: 30)
 //        print("寻找N个元素中第K大个数：",kthElement)
-        
 
         
-//        let result2 = bucketSort(input: xxArray,maxValue: 50)
-//        print(result2)
+//        var maxheap = MaxHeap<Int>(sort:>)//最大堆
+//        var minheap = MaxHeap<Int>(sort:<)//最小堆
+//        for i in 0..<31 {
+//            maxheap.insert(element: Int(arc4random_uniform(100))+i)
+//        }
+//
+//        print(maxheap)
+//
+//        maxheap.extract()
+//
+//        print(maxheap)
         
-        var maxheap = MaxHeap<Int>(sort:>)//最大堆
-        var minheap = MaxHeap<Int>(sort:<)//最小堆
-        for i in 0..<31 {
-            maxheap.insert(element: Int(arc4random_uniform(100))+i)
+        let startTime1 = CFAbsoluteTimeGetCurrent()
+        heapSort1(array: &xxArray)
+        let finishTime1 = CFAbsoluteTimeGetCurrent()
+        print("heapSort1 Time =",finishTime1 - startTime1)
+        //print(xxArray)
+
+//        var mxheap = MaxHeap<Int>(sort: >)
+//        mxheap.heapify(array: &xxArray)
+//        print(xxArray)
+        
+        var xxArray2 = [Int]()
+        for i in xxArray {
+            xxArray2.append(i)
         }
-
-        print(maxheap)
-
-        maxheap.extract()
-
-        print(maxheap)
         
-        
-        
-        HeapSort1(array: &xxArray)
-        print(xxArray)
+        let startTime2 = CFAbsoluteTimeGetCurrent()
+        heapSort2(array: &xxArray2)
+        let finishTime2 = CFAbsoluteTimeGetCurrent()
+        print("heapSort2 Time =",finishTime2 - startTime2)
+        //print(xxArray2)
+
         
         //leetcode
 

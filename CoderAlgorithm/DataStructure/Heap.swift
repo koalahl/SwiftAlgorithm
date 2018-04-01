@@ -100,10 +100,17 @@ struct MaxHeap<T:Comparable> {
     //向下
     fileprivate mutating func shiftDown (_ index:Int){
         var i = index, k = index
-        //满足条件：当前位置没有
-        while leftChildNodeIndex(i) < self.count && rightChildNodeIndex(i) < self.count{
-            let maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
-            k = list.index(of: maxChileNode)!
+        //满足条件：当前位置需要有子节点
+        while leftChildNodeIndex(i) < self.count{
+            var maxChileNode = list[leftChildNodeIndex(i)]
+            //如果有右子节点，则比较左右子节点的大小，再赋值给maxChildNode
+            if rightChildNodeIndex(i) < self.count {
+                maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
+            }
+            //Bug:当存在相当值的node时，数组的indexOf方法会返回首个索引。
+            //k = list.index(of: maxChileNode)!
+            
+            k = maxChileNode == list[leftChildNodeIndex(i)] ? leftChildNodeIndex(i):rightChildNodeIndex(i)
             if self.orderCriteria( maxChileNode,list[i]) {
                 list.swapAt(i, k)
             }
@@ -111,6 +118,18 @@ struct MaxHeap<T:Comparable> {
             i = k
         }
     }
-
+//MARK: Heapify 堆化一个数组
+    /// 堆化
+    /// 将一个数组转换成一个堆
+    /// - Parameter array: 数组
+    public mutating func heapify(array:inout [T]) {
+        list = array
+        //NOTE: 对于一个完全二叉树来说，第一个非叶子节点的位置是 （count - 1）/2 ,注意本项目的堆的索引从0开始，如果是从1开始，则是 count/2.
+        let lastFullNodeIndex = (array.count - 1) / 2
+        for i in (0...lastFullNodeIndex).reversed() {
+            shiftDown(i)
+        }
+        array = list
+    }
 }
 
