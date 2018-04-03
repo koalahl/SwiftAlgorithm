@@ -125,6 +125,12 @@ class ViewController: UIViewController {
         //print(xxArray2)
 
         
+        let str = "abcdefghabcdefghij"
+        print(str.count)
+        let c = find1stDiffCharacter(instring: str)
+        print(c)
+        
+        
         //leetcode
 
         /*

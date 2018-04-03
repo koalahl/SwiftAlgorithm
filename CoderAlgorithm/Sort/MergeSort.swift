@@ -15,6 +15,8 @@ import Foundation
  算法思想：分治 ：从左到右依次遍历两个序列，每次取最小的。这种做法的前提就是需要保证每个序列都是已经排序的。
  
  算法特点：需要额外开辟O(N)的空间。
+ 
+ 稳定排序
  */
 
 func mergeSort<T:Comparable>(array:[T])  -> [T]{

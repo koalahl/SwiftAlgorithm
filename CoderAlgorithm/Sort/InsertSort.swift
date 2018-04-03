@@ -15,6 +15,8 @@ import Foundation
     b:直到比较后不满足循环条件时再交换元素。
  与选择排序的区别：插入排序可以提前结束的机会，理论上会比选择排序用时少一点。
  当一个数组近似有序时，插入排序的时间复杂度将趋于O(n)
+ 
+ 稳定排序
  */
 public  func insertSort<T:Comparable>( array:[T]) -> [T] {
     
