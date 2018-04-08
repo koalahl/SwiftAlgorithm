@@ -41,8 +41,10 @@ public func find1stDiffCharacter(instring:String) -> Character {
     return Character("0")
 }
 // 采用hash方式
-// 创建一个hash数组
-
+func hash(str:String) -> Int {
+    
+    return 9999191919
+}
 /// 找出资格字符串中重复次数最多的那个字符
 
 

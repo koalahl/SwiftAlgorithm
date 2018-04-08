@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         
          */
         
-//        var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
-        var xxArray = generateRandomArray(n: 10000, left: 1, right: 10000)
+        var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
+        //var xxArray = generateRandomArray(n: 100, left: 1, right: 100)
         
         
         
@@ -103,27 +103,32 @@ class ViewController: UIViewController {
 //
 //        print(maxheap)
         
-        let startTime1 = CFAbsoluteTimeGetCurrent()
-        heapSort1(array: &xxArray)
-        let finishTime1 = CFAbsoluteTimeGetCurrent()
-        print("heapSort1 Time =",finishTime1 - startTime1)
+//        let startTime1 = CFAbsoluteTimeGetCurrent()
+//        heapSort1(array: &xxArray)
+//        let finishTime1 = CFAbsoluteTimeGetCurrent()
+//        print("heapSort1 Time =",finishTime1 - startTime1)
         //print(xxArray)
 
 //        var mxheap = MaxHeap<Int>(sort: >)
 //        mxheap.heapify(array: &xxArray)
 //        print(xxArray)
         
-        var xxArray2 = [Int]()
-        for i in xxArray {
-            xxArray2.append(i)
-        }
-        
-        let startTime2 = CFAbsoluteTimeGetCurrent()
-        heapSort2(array: &xxArray2)
-        let finishTime2 = CFAbsoluteTimeGetCurrent()
-        print("heapSort2 Time =",finishTime2 - startTime2)
-        //print(xxArray2)
+//        var xxArray2 = [Int]()
+//        for i in xxArray {
+//            xxArray2.append(i)
+//        }
+//
+//        let startTime2 = CFAbsoluteTimeGetCurrent()
+//        heapSort2(array: &xxArray2)
+//        let finishTime2 = CFAbsoluteTimeGetCurrent()
+//        print("heapSort2 Time =",finishTime2 - startTime2)
+//        //print(xxArray2)
 
+        let startTime3 = CFAbsoluteTimeGetCurrent()
+        heapSortInplace(array: &xxArray)
+        let finishTime3 = CFAbsoluteTimeGetCurrent()
+        print("heapSort3 Time =",finishTime3 - startTime3)
+        print(xxArray)
         
         let str = "abcdefghabcdefghij"
         print(str.count)
