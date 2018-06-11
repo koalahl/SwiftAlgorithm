@@ -10,7 +10,6 @@ import Foundation
 
 // 找到字符串中第一个非重复字符
 // 时间复杂度：最差 O(n2)  最好：O(n)
-
 public func find1stDiffCharacter(instring:String) -> Character {
     var str = instring
     var count = -1
@@ -45,10 +44,8 @@ func hash(str:String) -> Int {
     
     return 9999191919
 }
-/// 找出资格字符串中重复次数最多的那个字符
 
-
-
+/// 找出这个字符串中重复次数最多的那个字符
 extension String {
     mutating func update(_ newElement:Character, at index:String.Index) {
         insert(newElement, at: index)

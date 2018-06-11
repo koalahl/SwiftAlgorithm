@@ -32,7 +32,7 @@ func quickSort<T:Comparable>( array:[T]) -> [T] {
  空间复杂度：最优：O(logN), 最差：O(N)
  参考：https://blog.csdn.net/weshjiness/article/details/8660583
  */
-func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
+fileprivate func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
     let pivot = array[high]
 
     var i = low
@@ -46,7 +46,7 @@ func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Int {
     return i
 }
 //[5,7,3,8,9,4]
-func quickSortLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Void {
+public func quickSortLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Void {
     if low < high {
         let p = partitionLomuto(array: &array, low: low, high: high)
         quickSortLomuto(array: &array, low: low, high: p-1)//注意这里high的值是p-1，因为p位置上的值是上一次patition的pivot基准数，已经做过比较了。同理下面一行
@@ -59,7 +59,7 @@ func quickSortLomuto<T:Comparable>( array:inout [T],low:Int,high:Int) -> Void {
  1. 使用快速排序
  核心思想：快速排序每次分组之后返回的i值（分隔索引）也是该元素在整个数组排序完成之后的位置，不会改变。所以我们只要在相应区间范围内查找，可以减少查找时间，而不用等整个数组排完序。
  */
-func quickSortKth<T:Comparable>( array:inout [T],low:Int,high:Int,k:Int) -> Void {
+fileprivate func quickSortKth<T:Comparable>( array:inout [T],low:Int,high:Int,k:Int) -> Void {
     if low < high {
         let p = partitionLomuto(array: &array, low: low, high: high)
         if p > k {
@@ -72,7 +72,7 @@ func quickSortKth<T:Comparable>( array:inout [T],low:Int,high:Int,k:Int) -> Void
     }
     return
 }
-func findKthElement<T:Comparable>(in array:inout [T],k:Int) -> T {
+public func findKthElement<T:Comparable>(in array:inout [T],k:Int) -> T {
     guard k < array.count else {
         return 65535 as! T
     }

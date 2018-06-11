@@ -107,9 +107,8 @@ struct MaxHeap<T:Comparable> {
             if rightChildNodeIndex(i) < self.count {
                 maxChileNode = max(list[leftChildNodeIndex(i)], list[rightChildNodeIndex(i)])
             }
-            //Bug:当存在相当值的node时，数组的indexOf方法会返回首个索引。
+            //Bug:当存在相同值的node时，数组的indexOf方法会返回首个索引。
             //k = list.index(of: maxChileNode)!
-            
             k = maxChileNode == list[leftChildNodeIndex(i)] ? leftChildNodeIndex(i):rightChildNodeIndex(i)
             if self.orderCriteria( maxChileNode,list[i]) {
                 list.swapAt(i, k)

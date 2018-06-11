@@ -124,29 +124,39 @@ class ViewController: UIViewController {
 //        print("heapSort2 Time =",finishTime2 - startTime2)
 //        //print(xxArray2)
 
-        let startTime3 = CFAbsoluteTimeGetCurrent()
-        heapSortInplace(array: &xxArray)
-        let finishTime3 = CFAbsoluteTimeGetCurrent()
-        print("heapSort3 Time =",finishTime3 - startTime3)
-        print(xxArray)
+//        let startTime3 = CFAbsoluteTimeGetCurrent()
+//        heapSortInplace(array: &xxArray)
+//        let finishTime3 = CFAbsoluteTimeGetCurrent()
+//        print("heapSort3 Time =",finishTime3 - startTime3)
+//        print(xxArray)
         
-        let str = "abcdefghabcdefghij"
-        print(str.count)
-        let c = find1stDiffCharacter(instring: str)
-        print(c)
+//        let str = "abcdefghabcdefghij"
+//        print(str.count)
+//        let c = find1stDiffCharacter(instring: str)
+//        print(c)
         
         
         //leetcode
-
-        /*
          //1.two sum
-         let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]
-         let target = 200
-         let result = Two_Sum().twoSum(nums,target)
-         print(result)
-         
-         
-         */
+//         let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]
+//         let target = 100
+//         let result = twoSum(nums,target)
+//        print(result as Any)
+        
+         //88. 合并两个有序数组
+//        var nums1 = [1,2,3,0,0,0];//[1,2,5,6,8,9]
+//        let nums2 = [2,5,6];//[3,4,6,7,10]
+//        mergeTwoSortedArray(&nums1, nums1.count, nums2, nums2.count)
+//        print(nums1)
+        
+//        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
+//        print(nums1)
+        
+        
+        //3. 最长无重复字符的子串
+        let s = "pwwkew"
+        let length = lengthOfLongestSubstring(s)
+        print(length)
     }
 
     override func didReceiveMemoryWarning() {
