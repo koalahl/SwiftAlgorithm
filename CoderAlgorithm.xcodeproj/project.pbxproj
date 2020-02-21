@@ -13,8 +13,12 @@
 		1E34E40F1CE36D12004F5C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E34E40E1CE36D12004F5C98 /* Assets.xcassets */; };
 		1E34E4121CE36D12004F5C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E34E4101CE36D12004F5C98 /* LaunchScreen.storyboard */; };
 		1E34E41D1CE36D12004F5C98 /* CoderAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E41C1CE36D12004F5C98 /* CoderAlgorithmTests.swift */; };
-		1E34E42A1CE36E49004F5C98 /* 1Two Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4291CE36E49004F5C98 /* 1Two Sum.swift */; };
+		1E34E42A1CE36E49004F5C98 /* 1 Two Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */; };
 		1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */; };
+		1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA7B23A6088500642D95 /* LindedList.swift */; };
+		1E75DA8023A6356600642D95 /* 206 Reverse LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */; };
+		1E75DA8223A6407F00642D95 /* 92 ReverseLinklist2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */; };
+		1E75DA8423A645E700642D95 /* 234 palindromeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */; };
 		1E7CDB871DE29EB1002B8999 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB7E1DE29EB1002B8999 /* Queue.swift */; };
 		1E7CDB881DE29EB1002B8999 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB7F1DE29EB1002B8999 /* Stack.swift */; };
 		1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CDB811DE29EB1002B8999 /* BinarySearch.swift */; };
@@ -26,8 +30,10 @@
 		1E7F3022206BD8200044B5AD /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F3021206BD8200044B5AD /* Heap.swift */; };
 		1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */; };
 		1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94CE6C2070B4DA00625560 /* HeapSort.swift */; };
-		1EABA655208F24E8005DA18B /* MergeTwoSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA654208F24E8005DA18B /* MergeTwoSortedArray.swift */; };
-		1EE3AE6920959714002FB78C /* 3FindLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3AE6820959714002FB78C /* 3FindLongestSubstring.swift */; };
+		1EABA655208F24E8005DA18B /* 88 MergeTwoSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */; };
+		1ECC446E228C6C4C0094AD40 /* 2 Add Two Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */; };
+		1ECD7E0823FF8C010040B01E /* 排序算法比较.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */; };
+		1EE3AE6920959714002FB78C /* 3 FindLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */; };
 		1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB6BA1205D0980003E4027 /* MergeSort.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +58,12 @@
 		1E34E4181CE36D12004F5C98 /* CoderAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoderAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E34E41C1CE36D12004F5C98 /* CoderAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoderAlgorithmTests.swift; sourceTree = "<group>"; };
 		1E34E41E1CE36D12004F5C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E34E4291CE36E49004F5C98 /* 1Two Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1Two Sum.swift"; sourceTree = "<group>"; };
+		1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1 Two Sum.swift"; sourceTree = "<group>"; };
 		1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDiffChar.swift; sourceTree = "<group>"; };
+		1E75DA7B23A6088500642D95 /* LindedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LindedList.swift; sourceTree = "<group>"; };
+		1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "206 Reverse LinkedList.swift"; sourceTree = "<group>"; };
+		1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "92 ReverseLinklist2.swift"; sourceTree = "<group>"; };
+		1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "234 palindromeLinkedList.swift"; sourceTree = "<group>"; };
 		1E7CDB7E1DE29EB1002B8999 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		1E7CDB7F1DE29EB1002B8999 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		1E7CDB811DE29EB1002B8999 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
@@ -65,8 +75,10 @@
 		1E7F3021206BD8200044B5AD /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		1E94CE6C2070B4DA00625560 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
-		1EABA654208F24E8005DA18B /* MergeTwoSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedArray.swift; sourceTree = "<group>"; };
-		1EE3AE6820959714002FB78C /* 3FindLongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3FindLongestSubstring.swift; sourceTree = "<group>"; };
+		1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88 MergeTwoSortedArray.swift"; sourceTree = "<group>"; };
+		1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2 Add Two Number.swift"; sourceTree = "<group>"; };
+		1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "排序算法比较.jpg"; sourceTree = "<group>"; };
+		1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3 FindLongestSubstring.swift"; sourceTree = "<group>"; };
 		1EEB6BA1205D0980003E4027 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +126,7 @@
 				1E7CDB7D1DE29EB1002B8999 /* DataStructure */,
 				1E7CDB801DE29EB1002B8999 /* Search */,
 				1E7CDB821DE29EB1002B8999 /* Sort */,
-				1E36CBAA207340A100B7AD3F /* Problem */,
+				1E36CBAA207340A100B7AD3F /* Leetcode */,
 				1E34E40B1CE36D12004F5C98 /* Main.storyboard */,
 				1E34E4101CE36D12004F5C98 /* LaunchScreen.storyboard */,
 				1E34E4131CE36D12004F5C98 /* Info.plist */,
@@ -132,15 +144,19 @@
 			path = CoderAlgorithmTests;
 			sourceTree = "<group>";
 		};
-		1E36CBAA207340A100B7AD3F /* Problem */ = {
+		1E36CBAA207340A100B7AD3F /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				1E34E4291CE36E49004F5C98 /* 1Two Sum.swift */,
-				1EE3AE6820959714002FB78C /* 3FindLongestSubstring.swift */,
+				1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */,
+				1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */,
+				1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */,
 				1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */,
-				1EABA654208F24E8005DA18B /* MergeTwoSortedArray.swift */,
+				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
+				1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */,
+				1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */,
+				1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */,
 			);
-			path = Problem;
+			path = Leetcode;
 			sourceTree = "<group>";
 		};
 		1E7CDB7D1DE29EB1002B8999 /* DataStructure */ = {
@@ -149,6 +165,7 @@
 				1E7CDB7E1DE29EB1002B8999 /* Queue.swift */,
 				1E7CDB7F1DE29EB1002B8999 /* Stack.swift */,
 				1E7F3021206BD8200044B5AD /* Heap.swift */,
+				1E75DA7B23A6088500642D95 /* LindedList.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -165,6 +182,7 @@
 		1E7CDB821DE29EB1002B8999 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */,
 				1E7CDB831DE29EB1002B8999 /* BubbleSort.swift */,
 				1E7CDB841DE29EB1002B8999 /* BucketSort.swift */,
 				1E7CDB851DE29EB1002B8999 /* InsertSort.swift */,
@@ -227,7 +245,7 @@
 					1E34E4031CE36D11004F5C98 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 5BD5HJ4427;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 					};
 					1E34E4171CE36D12004F5C98 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -242,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E34E4121CE36D12004F5C98 /* LaunchScreen.storyboard in Resources */,
+				1ECD7E0823FF8C010040B01E /* 排序算法比较.jpg in Resources */,
 				1E34E40F1CE36D12004F5C98 /* Assets.xcassets in Resources */,
 				1E34E40D1CE36D12004F5C98 /* Main.storyboard in Resources */,
 			);
@@ -283,18 +303,23 @@
 			files = (
 				1E34E40A1CE36D12004F5C98 /* ViewController.swift in Sources */,
 				1E7F3022206BD8200044B5AD /* Heap.swift in Sources */,
+				1E75DA8223A6407F00642D95 /* 92 ReverseLinklist2.swift in Sources */,
 				1E7CDB8D1DE29EB1002B8999 /* QuickSort.swift in Sources */,
 				1E7CDB8B1DE29EB1002B8999 /* BucketSort.swift in Sources */,
 				1E7CDB8C1DE29EB1002B8999 /* InsertSort.swift in Sources */,
 				1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */,
 				1E7CDB881DE29EB1002B8999 /* Stack.swift in Sources */,
-				1EE3AE6920959714002FB78C /* 3FindLongestSubstring.swift in Sources */,
+				1EE3AE6920959714002FB78C /* 3 FindLongestSubstring.swift in Sources */,
+				1ECC446E228C6C4C0094AD40 /* 2 Add Two Number.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
+				1E75DA8423A645E700642D95 /* 234 palindromeLinkedList.swift in Sources */,
+				1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */,
 				1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */,
 				1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */,
-				1EABA655208F24E8005DA18B /* MergeTwoSortedArray.swift in Sources */,
-				1E34E42A1CE36E49004F5C98 /* 1Two Sum.swift in Sources */,
+				1EABA655208F24E8005DA18B /* 88 MergeTwoSortedArray.swift in Sources */,
+				1E34E42A1CE36E49004F5C98 /* 1 Two Sum.swift in Sources */,
+				1E75DA8023A6356600642D95 /* 206 Reverse LinkedList.swift in Sources */,
 				1E7D029120886410008C7FA7 /* BinarySearchTree.swift in Sources */,
 				1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */,
 				1E7CDB8A1DE29EB1002B8999 /* BubbleSort.swift in Sources */,
@@ -434,13 +459,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5BD5HJ4427;
 				INFOPLIST_FILE = CoderAlgorithm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starFox.CoderAlgorithm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -448,13 +476,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5BD5HJ4427;
 				INFOPLIST_FILE = CoderAlgorithm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starFox.CoderAlgorithm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

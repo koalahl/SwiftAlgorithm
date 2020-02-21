@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    var problems = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         /*
         var stack = Stack<Int>()
         stack.push(2)
@@ -26,14 +29,116 @@ class ViewController: UIViewController {
         queue.enqueue("rayderwich")
         queue.enqueue("algorithm")
         print(queue)
-        
          */
         
-        var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
+        leetcodeSolutions()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+extension ViewController:UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return  problems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        cell?.textLabel?.text = problems[indexPath.row]
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+}
+
+extension ViewController {
+    func leetcodeSolutions() {
+        //leetcode
+        //1.two sum
+        LeetCode1TwoSum()
+        
+        //2. Add Two Number , linkedList
+        LeetCode2AddTwoNumber()
+        
+        //206 反转链表
+        leetcode206ReverseLinkedList()
+        
+        //3. 最长无重复字符的子串
+        //leetCode3()
+        
+        //88. 合并两个有序数组
+        leetCode88()
+    }
+    
+    func LeetCode1TwoSum() {
+        let title = "LeetCode-1 Two Sum"
+        print(title)
+        problems.append(title)
+        let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24]
+        let target = 20
+        let result = twoSum(nums,target)
+//        let result = twoSumTwo(nums,target)
+        print("Output: indexes are" + "\(result as Any) \n")
+    }
+    
+    func LeetCode2AddTwoNumber() {
+        let title = "LeetCode-2 Add Two Number"
+        print(title)
+        problems.append(title)
+        let (l1,l2) = creatLinkedList()
+        let l3 = addTwoNumbers(l1.head!, l2.head!)
+        print("output linkedList:"+"\(l3!) \n")
+        
+//        printLinkedListReversed(l1)
+        
+    }
+    
+    func leetcode206ReverseLinkedList() {
+        let title = "LeetCode-206 ReverseLinkedList"
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+        let list = reverseList(l1.head!)
+        print("output linkedList:"+"\(list!) \n")
+
+    }
+    
+    func leetCode3() {
+        let title = "LeetCode-3 Find longest Substring without repeat characte"
+        print(title)
+        problems.append(title)
+        let s = "pwwkew"
+        let length = lengthOfLongestSubstring(s)
+        print(length)
+    }
+    
+    func leetCode88() {
+        problems.append("LeetCode-88 Merge Two Sorted Array")
+        var nums1 = [1,2,3,0,0,0];//[1,2,5,6,8,9]
+        let nums2 = [2,5,6];//[3,4,6,7,10]
+        mergeTwoSortedArray3(&nums1, 3, nums2, nums2.count)
+        print(nums1)
+        
+//        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
+//        print(nums1)
+    }
+}
+
+
+extension ViewController {
+    
+    /// 排序算法
+    func sortAlgorithm() {
+       var xxArray = [12, 43, 5, 7, 21, 3, 17,8]
         //var xxArray = generateRandomArray(n: 100, left: 1, right: 100)
-        
-        
-        
+
 //        let result2 = bucketSort(input: xxArray,maxValue: 50)
 //        print(result2)
 //
@@ -76,13 +181,11 @@ class ViewController: UIViewController {
 //        print("quickSort Time =",finishTime1 - startTime1)
 //        print(result)
 //
-//        let startTime2 = CFAbsoluteTimeGetCurrent()
-//
-        
-//        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
-//        print(xxArray)
-//        let finishTime2 = CFAbsoluteTimeGetCurrent()
-//        print("quickSortLomuto Time =",finishTime2 - startTime2)
+        let startTime2 = CFAbsoluteTimeGetCurrent()
+        quickSortLomuto(array: &xxArray, low: 0, high: xxArray.count-1)
+        print(xxArray)
+        let finishTime2 = CFAbsoluteTimeGetCurrent()
+        print("quickSortLomuto Time =",finishTime2 - startTime2)
 
 //        let result1 = bubbleSort(array: xxArray)
 //        print(result1)
@@ -90,7 +193,7 @@ class ViewController: UIViewController {
 //        let kthElement =  findKthElement(in: &xxArray, k: 30)
 //        print("寻找N个元素中第K大个数：",kthElement)
 
-        
+        //------堆/堆排序-------//
 //        var maxheap = MaxHeap<Int>(sort:>)//最大堆
 //        var minheap = MaxHeap<Int>(sort:<)//最小堆
 //        for i in 0..<31 {
@@ -134,36 +237,9 @@ class ViewController: UIViewController {
 //        print(str.count)
 //        let c = find1stDiffCharacter(instring: str)
 //        print(c)
-        
-        
-        //leetcode
-         //1.two sum
-//         let nums = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100]
-//         let target = 100
-//         let result = twoSum(nums,target)
-//        print(result as Any)
-        
-         //88. 合并两个有序数组
-//        var nums1 = [1,2,3,0,0,0];//[1,2,5,6,8,9]
-//        let nums2 = [2,5,6];//[3,4,6,7,10]
-//        mergeTwoSortedArray(&nums1, nums1.count, nums2, nums2.count)
-//        print(nums1)
-        
-//        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
-//        print(nums1)
-        
-        
-        //3. 最长无重复字符的子串
-        let s = "pwwkew"
-        let length = lengthOfLongestSubstring(s)
-        print(length)
+                
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     func generateRandomArray(n:Int,left:Int,right:Int) -> [Int] {
         var a = [Int](repeating:0, count:n)
         //生成n个介于left和right之间的元素
@@ -172,6 +248,4 @@ class ViewController: UIViewController {
         }
         return a
     }
-
 }
-

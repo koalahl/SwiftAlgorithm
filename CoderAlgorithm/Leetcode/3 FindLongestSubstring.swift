@@ -23,7 +23,7 @@ import Foundation
  */
 func lengthOfLongestSubstring(_ s: String) -> Int {
     
-//    let sArray = Array(s)
+    let sArray = Array(s)
     var left = 0, longest = 0,right = 0
     var dic:[Character:Int] = [:]
     
@@ -40,10 +40,9 @@ func lengthOfLongestSubstring(_ s: String) -> Int {
         right = index
     }
     //4. 最长子串范围：left--right
-//
-//    print(sArray[left...right])//类型是 ArraySlice ：["v", "d", "f"]
-//    let subArray = sArray[left...right]
-//    print(String(subArray))//可以直接转为字符串
+    print(sArray[left...right])//类型是 ArraySlice ：["v", "d", "f"]
+    let subArray = sArray[left...right]
+    print(String(subArray))//可以直接转为字符串
     
     return longest
 }

@@ -13,7 +13,7 @@ import Foundation
  
  算法核心：把i后面的所有元素依次与i位置的元素进行比较
  
- 注意与冒泡排序的区别。
+ 注意与冒泡排序的区别。冒泡排序是两两比较
 */
 func selectionSort<T:Comparable>(array:[T]) ->[T]{
     var a = array
