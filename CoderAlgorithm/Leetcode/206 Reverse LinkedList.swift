@@ -25,7 +25,7 @@ public func reverseList(_ head: ListNode<Int>?) -> ListNode<Int>? {
         prev = curr
         curr = tmpNode
     }
-    //注意这里是返回 prev
+    //注意这里是返回 prev ,最后会是新list的头节点
     return prev
 }
 

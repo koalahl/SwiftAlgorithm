@@ -167,9 +167,12 @@ func creatLinkedList()  -> (LinkedList<Int>, LinkedList<Int>){
     
     //创建两个链表
     var list1 = LinkedList<Int>()
-    list1.push(9)
-    list1.push(8)
+    list1.push(1)
     list1.push(2)
+    list1.push(3)
+    list1.push(3)
+    list1.push(2)
+    list1.push(1)
     print(list1)
     var list2 = LinkedList<Int>()
     list2.push(3)
@@ -183,11 +186,11 @@ func creatLinkedList()  -> (LinkedList<Int>, LinkedList<Int>){
 /// 逆序打印链表
 /// 递归。就是从最小问题出发
 func printLinkedListReversed(_ list:LinkedList<Int>) {
-    printLinkedListReversed(list.head)
+    _printLinkedListReversed(list.head)
 }
 
-private func printLinkedListReversed(_ node:ListNode<Int>?) {
+private func _printLinkedListReversed(_ node:ListNode<Int>?) {
     guard let node = node else { return }
-    printLinkedListReversed(node.next)
+    _printLinkedListReversed(node.next)
     print(node.val)
 }

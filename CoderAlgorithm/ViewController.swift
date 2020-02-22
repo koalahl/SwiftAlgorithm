@@ -75,6 +75,9 @@ extension ViewController {
         
         //88. 合并两个有序数组
         leetCode88()
+        
+        //234 判断一个单链表是否回文链表
+        leetcode234()
     }
     
     func LeetCode1TwoSum() {
@@ -104,8 +107,8 @@ extension ViewController {
         let title = "LeetCode-206 ReverseLinkedList"
         print(title)
         problems.append(title)
-        let (l1,_) = creatLinkedList()
-        let list = reverseList(l1.head!)
+        let (_,l2) = creatLinkedList()
+        let list = reverseList(l2.head!)
         print("output linkedList:"+"\(list!) \n")
 
     }
@@ -128,6 +131,15 @@ extension ViewController {
         
 //        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
 //        print(nums1)
+    }
+    
+    func leetcode234() {
+        let title = "LeetCode-234 is LinkList Palindrome"
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+        let result = isPalindrome(l1.head)
+        print("output:\(result)")
     }
 }
 
