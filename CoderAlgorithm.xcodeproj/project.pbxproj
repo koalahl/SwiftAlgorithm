@@ -31,6 +31,7 @@
 		1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */; };
 		1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94CE6C2070B4DA00625560 /* HeapSort.swift */; };
 		1EABA655208F24E8005DA18B /* 88 MergeTwoSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */; };
+		1EB53296240124E5001A9F68 /* 203 Remove LinkList Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB53295240124E5001A9F68 /* 203 Remove LinkList Element.swift */; };
 		1ECC446E228C6C4C0094AD40 /* 2 Add Two Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */; };
 		1ECD7E0823FF8C010040B01E /* 排序算法比较.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */; };
 		1EE3AE6920959714002FB78C /* 3 FindLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */; };
@@ -76,6 +77,7 @@
 		1E8B7A901DEBE04B00F765C1 /* SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		1E94CE6C2070B4DA00625560 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88 MergeTwoSortedArray.swift"; sourceTree = "<group>"; };
+		1EB53295240124E5001A9F68 /* 203 Remove LinkList Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "203 Remove LinkList Element.swift"; sourceTree = "<group>"; };
 		1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2 Add Two Number.swift"; sourceTree = "<group>"; };
 		1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "排序算法比较.jpg"; sourceTree = "<group>"; };
 		1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3 FindLongestSubstring.swift"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */,
 				1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */,
 				1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */,
+				1EB53295240124E5001A9F68 /* 203 Remove LinkList Element.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */,
 				1E7CDB881DE29EB1002B8999 /* Stack.swift in Sources */,
 				1EE3AE6920959714002FB78C /* 3 FindLongestSubstring.swift in Sources */,
+				1EB53296240124E5001A9F68 /* 203 Remove LinkList Element.swift in Sources */,
 				1ECC446E228C6C4C0094AD40 /* 2 Add Two Number.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,

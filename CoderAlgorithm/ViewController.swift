@@ -78,6 +78,8 @@ extension ViewController {
         
         //234 判断一个单链表是否回文链表
         leetcode234()
+        //203 移除链表元素 1
+        leetcode203()
     }
     
     func LeetCode1TwoSum() {
@@ -139,6 +141,15 @@ extension ViewController {
         problems.append(title)
         let (l1,_) = creatLinkedList()
         let result = isPalindrome(l1.head)
+        print("output:\(result)")
+    }
+    
+    func leetcode203() {
+        let title = "LeetCode-203 Remove LinkList Element"
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+        let result = removeLinkListElements(l1.head,6)
         print("output:\(result)")
     }
 }
