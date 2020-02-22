@@ -154,10 +154,7 @@
 				1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */,
 				1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */,
 				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
-				1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */,
-				1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */,
-				1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */,
-				1EB53295240124E5001A9F68 /* 203 Remove LinkList Element.swift */,
+				1EB5329724012C90001A9F68 /* LInkList */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -195,6 +192,17 @@
 				1E94CE6C2070B4DA00625560 /* HeapSort.swift */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		1EB5329724012C90001A9F68 /* LInkList */ = {
+			isa = PBXGroup;
+			children = (
+				1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */,
+				1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */,
+				1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */,
+				1EB53295240124E5001A9F68 /* 203 Remove LinkList Element.swift */,
+			);
+			path = LInkList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
