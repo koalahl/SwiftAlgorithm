@@ -57,29 +57,34 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
         
     }
 }
-
+//MARK: LeetCode题解
 extension ViewController {
     func leetcodeSolutions() {
         //leetcode
         //1.two sum
         LeetCode1TwoSum()
-        
         //2. Add Two Number , linkedList
         LeetCode2AddTwoNumber()
-        
-        //206 反转链表
-        leetcode206ReverseLinkedList()
-        
         //3. 最长无重复字符的子串
-        //leetCode3()
-        
+        leetCode3()
         //88. 合并两个有序数组
         leetCode88()
-        
+    //MARK:  链表
+        //206 反转链表
+        leetcode206ReverseLinkedList()
         //234 判断一个单链表是否回文链表
         leetcode234()
         //203 移除链表元素 1
         leetcode203()
+        //83 删除有序链表中的重复元素，只保留第一个
+        leetcode83()
+        //82 删除有序链表的全部重复元素
+        leetcode82()
+        //19 删除链表中倒数第n个结点
+        leetcode19()
+        
+        //61 旋转链表
+        leetcode61()
     }
     
     func LeetCode1TwoSum() {
@@ -149,8 +154,49 @@ extension ViewController {
         print(title)
         problems.append(title)
         let (l1,_) = creatLinkedList()
-        let result = removeLinkListElements(l1.head,6)
-        print("output:\(result)")
+        let result = removeLinkListElements(l1.head,1)
+        print("output:\(result) \n")
+    }
+    
+    func leetcode83() {
+        let title = "LeetCode-83 Remove Duplicates From sorted list"
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+//        let result = deleteDuplicates(l1.head)
+        let result = removeDuplicateNodes(l1.head)
+        print("output:\(result) \n")
+
+    }
+    
+    func leetcode82() {
+        let title = "LeetCode-82 Remove Duplicates From sorted list II"
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+        let result = deleteDuplicatesAll(l1.head)
+        print("output:\(result) \n")
+
+    }
+    
+    func leetcode19() {
+        let title = "LeetCode-19 Remove Nth node from the end of list "
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+        let result = removeNthFromEnd(l1.head, 2)
+        print("output:\(result) \n")
+
+    }
+    
+    func leetcode61() {
+        let title = "LeetCode-61 Rotate list "
+        print(title)
+        problems.append(title)
+        let (l1,_) = creatLinkedList()
+        let result = rotateListRight(l1.head, 2)
+        print("output:\(result) \n")
+
     }
 }
 
