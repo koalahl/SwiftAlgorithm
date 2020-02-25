@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E29CDC224056D3C00C007E4 /* 143 Reorder LinkLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */; };
+		1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */; };
 		1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4071CE36D12004F5C98 /* AppDelegate.swift */; };
 		1E34E40A1CE36D12004F5C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4091CE36D12004F5C98 /* ViewController.swift */; };
 		1E34E40D1CE36D12004F5C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E34E40B1CE36D12004F5C98 /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "143 Reorder LinkLIst.swift"; sourceTree = "<group>"; };
+		1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "141 LinkList Cycle.swift"; sourceTree = "<group>"; };
 		1E34E4041CE36D11004F5C98 /* CoderAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E34E4071CE36D12004F5C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E34E4091CE36D12004F5C98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,10 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */,
-				1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */,
-				1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */,
-				1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */,
-				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
+				1EDFA3FD2403AF87001F49B6 /* String */,
+				1EDFA3FE2403AF8F001F49B6 /* Array */,
 				1EB5329724012C90001A9F68 /* LInkList */,
 			);
 			path = Leetcode;
@@ -207,6 +209,7 @@
 		1EB5329724012C90001A9F68 /* LInkList */ = {
 			isa = PBXGroup;
 			children = (
+				1ECC446D228C6C4C0094AD40 /* 2 Add Two Number.swift */,
 				1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */,
 				1E75DA8123A6407F00642D95 /* 92 ReverseLinklist2.swift */,
 				1E75DA8323A645E700642D95 /* 234 palindromeLinkedList.swift */,
@@ -216,8 +219,27 @@
 				1E486E1A2401AF7F006A19E5 /* 19 Remove Nth Node from end of List.swift */,
 				1EB9C5262402B8DC0063E216 /* 328 Odd Even LinkList.swift */,
 				1EB9C5282402C16C0063E216 /* 61 Rotate LinkList.swift */,
+				1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */,
+				1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */,
 			);
 			path = LInkList;
+			sourceTree = "<group>";
+		};
+		1EDFA3FD2403AF87001F49B6 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */,
+				1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		1EDFA3FE2403AF8F001F49B6 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +351,7 @@
 			files = (
 				1E34E40A1CE36D12004F5C98 /* ViewController.swift in Sources */,
 				1EB9C5292402C16C0063E216 /* 61 Rotate LinkList.swift in Sources */,
+				1E29CDC224056D3C00C007E4 /* 143 Reorder LinkLIst.swift in Sources */,
 				1E7F3022206BD8200044B5AD /* Heap.swift in Sources */,
 				1E75DA8223A6407F00642D95 /* 92 ReverseLinklist2.swift in Sources */,
 				1E486E1B2401AF7F006A19E5 /* 19 Remove Nth Node from end of List.swift in Sources */,
@@ -344,6 +367,7 @@
 				1ECC446E228C6C4C0094AD40 /* 2 Add Two Number.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
+				1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */,
 				1E75DA8423A645E700642D95 /* 234 palindromeLinkedList.swift in Sources */,
 				1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */,
 				1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */,

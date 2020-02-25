@@ -85,6 +85,8 @@ extension ViewController {
         
         //61 旋转链表
         leetcode61()
+        //143 重排链表
+        leetCode143()
     }
     
     func LeetCode1TwoSum() {
@@ -196,7 +198,15 @@ extension ViewController {
         let (l1,_) = creatLinkedList()
         let result = rotateListRight(l1.head, 2)
         print("output:\(result) \n")
-
+    }
+    
+    func leetCode143() {
+        let title = "LeetCode-143 Reorder list "
+        print(title)
+        problems.append(title)
+        let (_,l2) = creatLinkedList()
+        reorderList(l2.head)
+        print("output:\(l2) \n")
     }
 }
 

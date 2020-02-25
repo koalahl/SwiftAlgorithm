@@ -41,7 +41,7 @@ func removeNthFromEnd(_ head: ListNode<Int>?, _ n: Int) -> ListNode<Int>? {
         i += 1
     }
     //然后prev和tail指针一起往后移动
-    while tail != nil && tail.next != nil {
+    while tail.next != nil {
         prev = prev.next!
         tail = tail.next!
     }

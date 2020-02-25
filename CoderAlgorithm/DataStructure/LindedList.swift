@@ -25,6 +25,20 @@ extension ListNode:CustomStringConvertible {
     }
 }
 
+//链表长度
+public func length(_ node:ListNode<Int>?) -> Int {
+    if node == nil {
+        return 0
+    }
+    var i = 0
+    var first = node
+    while first != nil{
+        first = first?.next
+        i += 1
+    }
+    return i
+}
+
 ///链表
 public struct LinkedList<T> {
     public var head:ListNode<T>?
@@ -175,9 +189,11 @@ func creatLinkedList()  -> (LinkedList<Int>, LinkedList<Int>){
     list1.push(1)
     print(list1)
     var list2 = LinkedList<Int>()
-    list2.push(3)
-    list2.push(6)
-    list2.push(2)
+//    list2.push(5)
+//    list2.push(4)
+//    list2.push(3)
+//    list2.push(2)
+    list2.push(1)
     print(list2)
     
     return (list1,list2)
