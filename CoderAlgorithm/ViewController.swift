@@ -85,6 +85,10 @@ extension ViewController {
         
         //61 旋转链表
         leetcode61()
+        //141 判断链表是否有环
+        leetCode141()
+        //142 判断链表是否有环，并返回环起始结点
+        leetCode142()
         //143 重排链表
         leetCode143()
     }
@@ -207,6 +211,24 @@ extension ViewController {
         let (_,l2) = creatLinkedList()
         reorderList(l2.head)
         print("output:\(l2) \n")
+    }
+    
+    func leetCode141() {
+        let title = "LeetCode-141 LinkList Cycle "
+        print(title)
+        problems.append(title)
+        let list = createCycleLinkList(with: [3,2,0,-4], pos:1)
+        let result = hasCycle2(list?.head)
+        print("output:\(result) \n")
+    }
+    
+    func leetCode142() {
+        let title = "LeetCode-142 LinkList Cycle II "
+        print(title)
+        problems.append(title)
+        let list = createCycleLinkList(with: [3,2,0,-4], pos:1)
+        let cyclenode = detectCycle2(list?.head, 1)//这个pos入参没用
+        print("output:\(cyclenode?.val) \n")
     }
 }
 

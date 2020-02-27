@@ -189,14 +189,44 @@ func creatLinkedList()  -> (LinkedList<Int>, LinkedList<Int>){
     list1.push(1)
     print(list1)
     var list2 = LinkedList<Int>()
-//    list2.push(5)
-//    list2.push(4)
-//    list2.push(3)
-//    list2.push(2)
+    list2.push(5)
+    list2.push(4)
+    list2.push(3)
+    list2.push(2)
     list2.push(1)
     print(list2)
     
     return (list1,list2)
+}
+
+/// 创建链表
+/// - Parameter array: 数组：链表元素值
+func createLinkList(with array:[Int]) -> LinkedList<Int>? {
+    if array.count == 0 {
+        return nil
+    }
+    var list = LinkedList<Int>()
+    for item in array {
+        list.push(item)
+    }
+    return list
+}
+
+/// 创建环形链表
+/// - Parameters:
+///   - array: 数组：链表元素值
+///   - pos: 环起始结点位置
+func createCycleLinkList(with array:[Int] ,pos: Int) -> LinkedList<Int>? {
+    if array.count == 0 {
+        return nil
+    }
+    var list = LinkedList<Int>()
+    for item in array.reversed() {
+        list.push(item)
+    }
+    let node = list.node(at: pos)
+    list.tail?.next = node
+    return list
 }
 
 /// 逆序打印链表
