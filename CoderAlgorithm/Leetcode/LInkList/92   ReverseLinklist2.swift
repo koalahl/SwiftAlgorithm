@@ -16,21 +16,74 @@ import Foundation
 
  示例:
  输入: 1->2->3->4->5->NULL, m = 2, n = 4
- 输出: 1->4->3->2->5->NULL
+ 输出: 1->4->3->2->5-->NULL
+ 
+ https://leetcode-cn.com/problems/reverse-linked-list-ii/
 
- 来源：力扣（LeetCode）
- 链接：https://leetcode-cn.com/problems/reverse-linked-list-ii
- 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- - https://leetcode-cn.com/problems/reverse-linked-list-ii/
- - 时间复杂度：O(n)
- - 空间复杂度：O(1)
- 解法一：递归
+ - 解法一：递归  时间复杂度：O(n) 空间复杂度：O(n)
+ - 解法二：多指针，一次扫描 ：时间复杂度：O(n) 空间复杂度：O(1)
  */
 func reverseBetween(_ head: ListNode<Int>?, _ m: Int, _ n: Int) -> ListNode<Int>? {
     if head == nil {
         return nil
     }
+    var mm = m
+    var nn = n
+    var curr = head
+    var dummy = head
+    var prev:ListNode<Int>? = nil
+    //把curr移动到第m个结点位置。m和n在这一步的循环中已经减小了m-1，
+    while m > 1 {
+        prev = curr
+        curr = curr?.next
+        mm -= 1
+        nn -= 1
+    }
+    
+    let con = prev//保存第m个结点的前一个结点
+    let tail = curr//保存到第m个结点位置
+    var third:ListNode<Int>? = nil
+    
+    //此时循环的次数实际上就是第m到第n个结点之前到结点个数 ： n-m+1 个/次
+    while nn > 0 {
+        third = curr?.next//先用third保存curr后面的结点
+        curr?.next = prev//往前指
+        prev = curr
+        curr = third
+        nn -= 1
+    }
+    //prev就是第n个结点位置，curr就是第n个结点后面一个结点
+    if con !== nil {
+        con!.next = prev
+    }else {
+        dummy = prev
+    }
+    //
+    tail?.next = curr
+    return dummy
+}
+
+
+/// 递归
+var stop = false
+var left = ListNode(0)
+
+func reverseBetween2(_ head: ListNode<Int>?, _ m: Int, _ n: Int) -> ListNode<Int>? {
+    if head == nil {
+        return nil
+    }
+    left = head!
+    var dummy = head
+    var mm = m
+    var nn = n
+    recurseAndReverse(&dummy, &mm, &nn)
+    return head
+}
+
+func recurseAndReverse(_ right: inout ListNode<Int>?,_ m : inout Int, _ n: inout Int) {
+    if n == 1 {
+        return
+    }
     
     
-    return nil
 }
