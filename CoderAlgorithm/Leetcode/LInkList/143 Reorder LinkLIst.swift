@@ -27,7 +27,7 @@ import Foundation
 https://leetcode-cn.com/problems/reorder-list
 
 解法一：使用分隔链表，反转链表，再组合到一起
-时间复杂度：O（n），空间复杂度：O（n）
+时间复杂度：O（n），空间复杂度：O（1）
 **/
 func reorderList(_ head: ListNode<Int>?) -> ListNode<Int>? {
     if head == nil {

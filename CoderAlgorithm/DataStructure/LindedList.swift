@@ -206,7 +206,7 @@ func createLinkList(with array:[Int]) -> LinkedList<Int>? {
         return nil
     }
     var list = LinkedList<Int>()
-    for item in array {
+    for item in array.reversed() {
         list.push(item)
     }
     return list

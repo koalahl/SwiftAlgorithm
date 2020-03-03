@@ -63,13 +63,13 @@ extension ViewController {
         //leetcode
         //1.two sum
         LeetCode1TwoSum()
-        //2. Add Two Number , linkedList
-        LeetCode2AddTwoNumber()
         //3. 最长无重复字符的子串
         leetCode3()
         //88. 合并两个有序数组
         leetCode88()
     //MARK:  链表
+        //2. Add Two Number , linkedList
+        LeetCode2AddTwoNumber()
         //206 反转链表
         leetcode206ReverseLinkedList()
         //234 判断一个单链表是否回文链表
@@ -82,7 +82,6 @@ extension ViewController {
         leetcode82()
         //19 删除链表中倒数第n个结点
         leetcode19()
-        
         //61 旋转链表
         leetcode61()
         //141 判断链表是否有环
@@ -91,6 +90,8 @@ extension ViewController {
         leetCode142()
         //143 重排链表
         leetCode143()
+        //86  分隔链表
+        leetCode86()
     }
     
     func LeetCode1TwoSum() {
@@ -201,7 +202,7 @@ extension ViewController {
         problems.append(title)
         let (l1,_) = creatLinkedList()
         let result = rotateListRight(l1.head, 2)
-        print("output:\(result) \n")
+        print("output:\(String(describing: result)) \n")
     }
     
     func leetCode143() {
@@ -209,7 +210,7 @@ extension ViewController {
         print(title)
         problems.append(title)
         let (_,l2) = creatLinkedList()
-        reorderList(l2.head)
+        let _ = reorderList(l2.head)
         print("output:\(l2) \n")
     }
     
@@ -228,7 +229,16 @@ extension ViewController {
         problems.append(title)
         let list = createCycleLinkList(with: [3,2,0,-4], pos:1)
         let cyclenode = detectCycle2(list?.head, 1)//这个pos入参没用
-        print("output:\(cyclenode?.val) \n")
+        print("output:\(String(describing: cyclenode?.val)) \n")
+    }
+    
+    func leetCode86() {
+        let title = "LeetCode-86 Partition LinkList "
+        print(title)
+        problems.append(title)
+        let list = createLinkList(with: [1,2,3])
+        let result = partition(list?.head, 5)
+        print("output:\(String(describing: result)) \n")
     }
 }
 
