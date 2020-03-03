@@ -18,7 +18,7 @@ import Foundation
 
  输入: head = 1->4->3->2->5->2, x = 3
  输出: 1->2->2->4->3->5
- 解法：把大于等于x的结点移动到链表尾。
+ 解法一：把大于等于x的结点移动到链表尾。不创建新链表
  时间复杂度：O（n），空间复杂度O（1）
  */
 func partition(_ head: ListNode<Int>?, _ x: Int) -> ListNode<Int>? {
@@ -54,5 +54,19 @@ func partition(_ head: ListNode<Int>?, _ x: Int) -> ListNode<Int>? {
         previous = curr!
         curr = third
     }
+    return dummy.next
+}
+
+/// 解法2: 创建一个新的链表，删除满足条件的元素，并把该元素放到新链表
+func partition2(_ head: ListNode<Int>?, _ x: Int) -> ListNode<Int>? {
+    if head == nil {
+        return nil
+    }
+    let dummy = ListNode(0)
+    dummy.next = head
+    var prev = dummy
+    var curr = head
+    var third = head?.next
+
     return dummy.next
 }
