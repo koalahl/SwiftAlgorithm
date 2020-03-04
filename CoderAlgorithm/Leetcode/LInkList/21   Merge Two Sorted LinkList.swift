@@ -17,7 +17,7 @@ import Foundation
  输出：1->1->2->3->4->4
  
  https://leetcode-cn.com/problems/merge-two-sorted-lists/
- 解法：新建一个链表，逐一比较两个链表，较小的插入到新的链表种
+ 解法：新建一个链表，逐一比较两个链表，较小的插入到新的链表中
  时间复杂度：O（n），空间复杂度O（1）
  */
 func mergeTwoLists(_ l1: ListNode<Int>?, _ l2: ListNode<Int>?) -> ListNode<Int>? {

@@ -42,8 +42,8 @@ func twoSumOne(_ nums:[Int], _ target: Int) -> [Int] {
 
 /*
  解法2： 利用map 存放
- 但是数组中有可能出现重复元素，这样就不能正确找到对应元素的下标。例如[3,3] target = 6时。
- dq 时间复杂度：O（2n）
+ 缺点：但是数组中有可能出现重复元素，这样就不能正确找到对应元素的下标。例如[3,3,3] target = 6时。
+ 时间复杂度：O（2n）空间复杂度O（n）
  */
 func twoSumTwo(_ nums:[Int],_ target:Int) -> [Int] {
     var dict = [Int:Int]()
@@ -61,9 +61,9 @@ func twoSumTwo(_ nums:[Int],_ target:Int) -> [Int] {
 }
 
 /*
- 解法3： 利用map
+ 解法3： 利用map 优化
  使用这种方法，我们就可以避免重复元素带来的问题。因为我们在判断是否有包含i元素的答案的时候，i还没有被加入map当中。
- dq 时间复杂度：O（n）
+ 时间复杂度：O（n）空间复杂度O（n）
  */
 func twoSum(_ nums:[Int],_ target:Int) -> [Int] {
     var dict = [Int:Int]()

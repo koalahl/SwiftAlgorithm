@@ -61,16 +61,22 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
 extension ViewController {
     func leetcodeSolutions() {
         //leetcode
+    //MARK: 数组
         //1.two sum
         LeetCode1TwoSum()
-        //3. 最长无重复字符的子串
-        leetCode3()
         //88. 合并两个有序数组
         leetCode88()
+        //11. 盛水最多的容器
+        leetCode11()
+        //3. 最长无重复字符的子串
+        leetCode3()
+        
     //MARK:  链表
         //2. Add Two Number , linkedList
         LeetCode2AddTwoNumber()
         //206 反转链表
+        leetcode206ReverseLinkedList()
+        //92 反转链表II
         leetcode206ReverseLinkedList()
         //234 判断一个单链表是否回文链表
         leetcode234()
@@ -82,6 +88,8 @@ extension ViewController {
         leetcode82()
         //19 删除链表中倒数第n个结点
         leetcode19()
+        //21 合并两个有序链表
+         leetcode21()
         //61 旋转链表
         leetcode61()
         //141 判断链表是否有环
@@ -93,7 +101,10 @@ extension ViewController {
         //86  分隔链表
         leetCode86()
     }
-    
+
+}
+//MARK: 数组
+extension ViewController {
     func LeetCode1TwoSum() {
         let title = "LeetCode-1 Two Sum"
         print(title)
@@ -105,6 +116,41 @@ extension ViewController {
         print("Output: indexes are" + "\(result as Any) \n")
     }
     
+    func leetCode88() {
+        let title = "LeetCode-88 Merge Two Sorted Array"
+        print(title)
+        problems.append(title)
+        var nums1 = [1,2,3,0,0,0];//[1,2,5,6,8,9]
+        let nums2 = [2,5,6];//[3,4,6,7,10]
+        mergeTwoSortedArray3(&nums1, 3, nums2, nums2.count)
+        print("output:\(nums1)\n")
+//        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
+//        print(nums1)
+    }
+    
+    func leetCode11() {
+        let title = "LeetCode-11 Container with most water"
+        print(title)
+        problems.append(title)
+        let nums1 = [1,4,5,6,8,9,6]
+        let result = maxArea2(nums1)
+        print("output:\(result) \n")
+    }
+}
+//MARK: String
+extension ViewController {
+    func leetCode3() {
+        let title = "LeetCode-3 Find longest Substring without repeat characte"
+        print(title)
+        problems.append(title)
+        let s = "pwwkew"
+        let length = lengthOfLongestSubstring(s)
+        print(length)
+    }
+}
+
+//MARK: Linked List
+extension ViewController {
     func LeetCode2AddTwoNumber() {
         let title = "LeetCode-2 Add Two Number"
         print(title)
@@ -112,9 +158,6 @@ extension ViewController {
         let (l1,l2) = creatLinkedList()
         let l3 = addTwoNumbers(l1.head!, l2.head!)
         print("output linkedList:"+"\(l3!) \n")
-        
-//        printLinkedListReversed(l1)
-        
     }
     
     func leetcode206ReverseLinkedList() {
@@ -126,36 +169,24 @@ extension ViewController {
         print("output linkedList:"+"\(list!) \n")
 
     }
-    
-    func leetCode3() {
-        let title = "LeetCode-3 Find longest Substring without repeat characte"
+    func leetcode92() {
+        let title = "LeetCode-92 ReverseLinkedList II"
         print(title)
         problems.append(title)
-        let s = "pwwkew"
-        let length = lengthOfLongestSubstring(s)
-        print(length)
+        let (_,l2) = creatLinkedList()
+        let list = reverseBetween(l2.head, 2, 4)
+        print("output linkedList:"+"\(list!) \n")
+
     }
-    
-    func leetCode88() {
-        problems.append("LeetCode-88 Merge Two Sorted Array")
-        var nums1 = [1,2,3,0,0,0];//[1,2,5,6,8,9]
-        let nums2 = [2,5,6];//[3,4,6,7,10]
-        mergeTwoSortedArray3(&nums1, 3, nums2, nums2.count)
-        print(nums1)
-        
-//        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
-//        print(nums1)
-    }
-    
     func leetcode234() {
-        let title = "LeetCode-234 is LinkList Palindrome"
-        print(title)
-        problems.append(title)
-        let l1 = createLinkList(with: [1,2,3,2,1])
-        let result = isPalindrome(l1?.head)
-        print("output:\(result) \n")
+            let title = "LeetCode-234 is LinkList Palindrome"
+            print(title)
+            problems.append(title)
+            let l1 = createLinkList(with: [1,2,3,2,1])
+            let result = isPalindrome(l1?.head)
+            print("output:\(result) \n")
     }
-    
+        
     func leetcode203() {
         let title = "LeetCode-203 Remove LinkList Element"
         print(title)
@@ -193,7 +224,15 @@ extension ViewController {
         let (l1,_) = creatLinkedList()
         let result = removeNthFromEnd(l1.head, 2)
         print("output:\(result) \n")
+    }
 
+    func leetcode21() {
+        let title = "LeetCode-21 Merge Two Sorted LinkList "
+        print(title)
+        problems.append(title)
+        let (l1,l2) = creatLinkedList()
+        let result = mergeTwoLists(l1.head,l2.head)
+        print("output:\(result) \n")
     }
     
     func leetcode61() {
@@ -241,7 +280,6 @@ extension ViewController {
         print("output:\(String(describing: result)) \n")
     }
 }
-
 
 extension ViewController {
     
