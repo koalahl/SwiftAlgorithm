@@ -69,6 +69,9 @@ func isPalindromeLegacy(_ head:ListNode<Int>?) -> Bool {
     }
     
     //找到前半部分链表的尾结点,
+    //偶数个：1234，slow最后指向2；奇数个 12345，slow最后指向3.
+    //也就是说这个循环条件的分隔，中间节点是slow.next。其实这里的slow就是 143题的 prev节点。143的slow就是这里的slow.next。这里需要往前定位一个节点，所以循环条件就提前一位，判断fast!.next?.next
+    //只不过这里需要找到前半部分的尾节点，
     var slow = head , fast = head
     while fast?.next != nil && fast!.next?.next != nil {
         fast = fast?.next?.next

@@ -37,7 +37,7 @@ func reorderList(_ head: ListNode<Int>?) -> ListNode<Int>? {
     //注意这里 两个指针都指向head。 区别于141判断链表是否有环的快慢指针是一前一后。
     var slow = head
     var fast = head
-    //1.分隔 使用快慢指针将链表分隔成两段，链表的奇偶不影响分隔。
+    //1.分隔 使用快慢指针将链表分隔成两段，链表的奇偶不影响分隔。 链表的中间节点：第n/2个 奇数个时，中间节点会成为后半段的头结点
     while fast != nil && fast?.next != nil {
         prev = slow
         slow = slow?.next

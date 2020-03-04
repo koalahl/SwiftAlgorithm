@@ -151,9 +151,9 @@ extension ViewController {
         let title = "LeetCode-234 is LinkList Palindrome"
         print(title)
         problems.append(title)
-        let (l1,_) = creatLinkedList()
-        let result = isPalindrome(l1.head)
-        print("output:\(result)")
+        let l1 = createLinkList(with: [1,2,3,2,1])
+        let result = isPalindrome(l1?.head)
+        print("output:\(result) \n")
     }
     
     func leetcode203() {
@@ -209,9 +209,9 @@ extension ViewController {
         let title = "LeetCode-143 Reorder list "
         print(title)
         problems.append(title)
-        let (_,l2) = creatLinkedList()
-        let _ = reorderList(l2.head)
-        print("output:\(l2) \n")
+        let list = createLinkList(with: [1,2,3,4])
+        let _ = reorderList(list?.head)
+        print("output:\(list) \n")
     }
     
     func leetCode141() {
