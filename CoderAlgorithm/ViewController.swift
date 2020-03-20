@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         queue.enqueue("algorithm")
         print(queue)
          */
-        
+        sortAlgorithm()
         leetcodeSolutions()
     }
 

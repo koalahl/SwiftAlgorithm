@@ -51,6 +51,7 @@ fileprivate func partitionLomuto<T:Comparable>( array:inout [T],low:Int,high:Int
             i += 1
         }
     }
+    //遍历完之后，i位置左侧都是小于基准数的，右侧都是大于基准数的。所以i就是这次基准数的最终位置，把基准数和i位置的元素交换一下，
     (array[i],array[high]) = (array[high],array[i])
     return i
 }

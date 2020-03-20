@@ -48,7 +48,7 @@ struct MaxHeap<T:Comparable> {
     public func isEmpty() ->Bool{
         return list.isEmpty
     }
-    
+    //是否最大堆还是最小堆，可以根据传入的sort策略改变
     init(sort:@escaping (T,T)->Bool) {
         self.orderCriteria = sort
     }
