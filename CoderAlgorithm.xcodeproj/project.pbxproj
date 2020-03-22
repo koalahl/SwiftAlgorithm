@@ -21,6 +21,7 @@
 		1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */; };
 		1E486E1B2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E486E1A2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift */; };
 		1E5884B7241005B700D8B1C9 /* 11 Container with most water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */; };
+		1E5884B9241012F000D8B1C9 /* 15 3sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5884B8241012F000D8B1C9 /* 15 3sum.swift */; };
 		1E745486240EB4F600F8464D /* 86  Partition LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */; };
 		1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA7B23A6088500642D95 /* LindedList.swift */; };
 		1E75DA8023A6356600642D95 /* 206 Reverse LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */; };
@@ -46,6 +47,11 @@
 		1ECC446E228C6C4C0094AD40 /* 2      Add Two Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC446D228C6C4C0094AD40 /* 2      Add Two Number.swift */; };
 		1ECD7E0823FF8C010040B01E /* 排序算法比较.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */; };
 		1EE3AE6920959714002FB78C /* 3 FindLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */; };
+		1EEADCE92426704100EED6DA /* 100 Is same Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCE82426704100EED6DA /* 100 Is same Tree.swift */; };
+		1EEADCEB2426721B00EED6DA /* 226 Invert Binary Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCEA2426721B00EED6DA /* 226 Invert Binary Tree.swift */; };
+		1EEADCED2426778D00EED6DA /* 144 Tree preorder traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCEC2426778D00EED6DA /* 144 Tree preorder traversal.swift */; };
+		1EEADCEF24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCEE24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift */; };
+		1EEADCF124267EE700EED6DA /* 145 Tree postOrder Traserval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCF024267EE700EED6DA /* 145 Tree postOrder Traserval.swift */; };
 		1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB6BA1205D0980003E4027 /* MergeSort.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +84,7 @@
 		1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDiffChar.swift; sourceTree = "<group>"; };
 		1E486E1A2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19   Remove Nth Node from end of List.swift"; sourceTree = "<group>"; };
 		1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11 Container with most water.swift"; sourceTree = "<group>"; };
+		1E5884B8241012F000D8B1C9 /* 15 3sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15 3sum.swift"; sourceTree = "<group>"; };
 		1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "86  Partition LinkedList.swift"; sourceTree = "<group>"; };
 		1E75DA7B23A6088500642D95 /* LindedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LindedList.swift; sourceTree = "<group>"; };
 		1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "206 Reverse LinkedList.swift"; sourceTree = "<group>"; };
@@ -103,6 +110,11 @@
 		1ECC446D228C6C4C0094AD40 /* 2      Add Two Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2      Add Two Number.swift"; sourceTree = "<group>"; };
 		1ECD7E0723FF8C010040B01E /* 排序算法比较.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "排序算法比较.jpg"; sourceTree = "<group>"; };
 		1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3 FindLongestSubstring.swift"; sourceTree = "<group>"; };
+		1EEADCE82426704100EED6DA /* 100 Is same Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "100 Is same Tree.swift"; sourceTree = "<group>"; };
+		1EEADCEA2426721B00EED6DA /* 226 Invert Binary Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "226 Invert Binary Tree.swift"; sourceTree = "<group>"; };
+		1EEADCEC2426778D00EED6DA /* 144 Tree preorder traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "144 Tree preorder traversal.swift"; sourceTree = "<group>"; };
+		1EEADCEE24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "94   Tree Inorder Traserval.swift"; sourceTree = "<group>"; };
+		1EEADCF024267EE700EED6DA /* 145 Tree postOrder Traserval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "145 Tree postOrder Traserval.swift"; sourceTree = "<group>"; };
 		1EEB6BA1205D0980003E4027 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +183,7 @@
 		1E36CBAA207340A100B7AD3F /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				1EEADCE72426704100EED6DA /* Tree */,
 				1EDFA3FD2403AF87001F49B6 /* String */,
 				1EDFA3FE2403AF8F001F49B6 /* Array */,
 				1EB5329724012C90001A9F68 /* LInkList */,
@@ -248,10 +261,23 @@
 			isa = PBXGroup;
 			children = (
 				1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */,
+				1E5884B8241012F000D8B1C9 /* 15 3sum.swift */,
 				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
 				1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		1EEADCE72426704100EED6DA /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				1EEADCE82426704100EED6DA /* 100 Is same Tree.swift */,
+				1EEADCEA2426721B00EED6DA /* 226 Invert Binary Tree.swift */,
+				1EEADCEC2426778D00EED6DA /* 144 Tree preorder traversal.swift */,
+				1EEADCEE24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift */,
+				1EEADCF024267EE700EED6DA /* 145 Tree postOrder Traserval.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +393,7 @@
 				1E29CDC224056D3C00C007E4 /* 143 Reorder LinkLIst.swift in Sources */,
 				1E5884B7241005B700D8B1C9 /* 11 Container with most water.swift in Sources */,
 				1E7F3022206BD8200044B5AD /* Heap.swift in Sources */,
+				1EEADCEF24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift in Sources */,
 				1E75DA8223A6407F00642D95 /* 92   ReverseLinklist2.swift in Sources */,
 				1E486E1B2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift in Sources */,
 				1E7CDB8D1DE29EB1002B8999 /* QuickSort.swift in Sources */,
@@ -381,9 +408,13 @@
 				1ECC446E228C6C4C0094AD40 /* 2      Add Two Number.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
+				1EEADCF124267EE700EED6DA /* 145 Tree postOrder Traserval.swift in Sources */,
 				1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */,
 				1E75DA8423A645E700642D95 /* 234 PalindromeLinkedList.swift in Sources */,
+				1EEADCED2426778D00EED6DA /* 144 Tree preorder traversal.swift in Sources */,
+				1E5884B9241012F000D8B1C9 /* 15 3sum.swift in Sources */,
 				1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */,
+				1EEADCE92426704100EED6DA /* 100 Is same Tree.swift in Sources */,
 				1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */,
 				1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */,
 				1EABA655208F24E8005DA18B /* 88 MergeTwoSortedArray.swift in Sources */,
@@ -393,6 +424,7 @@
 				1E745486240EB4F600F8464D /* 86  Partition LinkedList.swift in Sources */,
 				1E7D029120886410008C7FA7 /* BinarySearchTree.swift in Sources */,
 				1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */,
+				1EEADCEB2426721B00EED6DA /* 226 Invert Binary Tree.swift in Sources */,
 				1E7CDB8A1DE29EB1002B8999 /* BubbleSort.swift in Sources */,
 				1EAF4EBA240189A60079AA6F /* 82   Remove Duplicated from Sorted List 2.swift in Sources */,
 				1E7CDB871DE29EB1002B8999 /* Queue.swift in Sources */,

@@ -28,3 +28,19 @@ class BinarySearchTree <T:Comparable>{
     }
     
 }
+//树结点
+public class TreeNode {
+    public var val: Int
+    public var left: TreeNode?
+    public var right: TreeNode?
+    
+    public init(value:Int) {
+        self.val = value
+        self.left = nil
+        self.right = nil
+    }
+    //返回树的结点个数
+    public var count:Int {
+        return left?.count ?? 0 + (right?.count ?? 0) + 1
+    }
+}

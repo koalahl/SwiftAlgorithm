@@ -22,7 +22,9 @@ import Foundation
  给定 "pwwkew" ，最长子串是 "wke" ，长度是3。请注意答案必须是一个子串，"pwke" 是 子序列  而不是子串。
  */
 func lengthOfLongestSubstring(_ s: String) -> Int {
-    
+    if s.count == 0 {
+        return 0
+    }
     let sArray = Array(s)
     var left = 0, longest = 0,right = 0
     var dic:[Character:Int] = [:]
