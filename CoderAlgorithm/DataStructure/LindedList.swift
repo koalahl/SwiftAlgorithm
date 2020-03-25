@@ -168,6 +168,7 @@ func creatLinkedList()  -> (LinkedList<Int>, LinkedList<Int>){
     let n1 = ListNode(6)
     let n2 = ListNode(4)
     let n3 = ListNode(3)
+
     n1.next = n2
     n2.next = n3
 //    print(n1)
@@ -175,10 +176,13 @@ func creatLinkedList()  -> (LinkedList<Int>, LinkedList<Int>){
     let n4 = ListNode(5)
     let n5 = ListNode(6)
     let n6 = ListNode(4)
+//    let n7 = ListNode(7)
+
     n4.next = n5
     n5.next = n6
+    n6.next = n2
 //    print(n4)
-    
+
     //创建两个链表
     var list1 = LinkedList<Int>()
     list1.push(1)

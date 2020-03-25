@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E16222624080EE30010DF7C /* 142 LinkList Cycle II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */; };
 		1E1622282408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1622272408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift */; };
+		1E1E6A76242B88C600A09CFC /* 160 Intersection of two linkedlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */; };
 		1E29CDC224056D3C00C007E4 /* 143 Reorder LinkLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */; };
 		1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */; };
 		1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4071CE36D12004F5C98 /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 /* Begin PBXFileReference section */
 		1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "142 LinkList Cycle II.swift"; sourceTree = "<group>"; };
 		1E1622272408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21   Merge Two Sorted LinkList.swift"; sourceTree = "<group>"; };
+		1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "160 Intersection of two linkedlist.swift"; sourceTree = "<group>"; };
 		1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "143 Reorder LinkLIst.swift"; sourceTree = "<group>"; };
 		1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "141 LinkList Cycle.swift"; sourceTree = "<group>"; };
 		1E34E4041CE36D11004F5C98 /* CoderAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,6 +250,7 @@
 				1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */,
 				1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */,
 				1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */,
+				1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */,
 			);
 			path = LInkList;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				1E7D029120886410008C7FA7 /* BinarySearchTree.swift in Sources */,
 				1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */,
 				1E48AEAD24289CE6004473D5 /* findMiddleNum.swift in Sources */,
+				1E1E6A76242B88C600A09CFC /* 160 Intersection of two linkedlist.swift in Sources */,
 				1EEADCEB2426721B00EED6DA /* 226 Invert Binary Tree.swift in Sources */,
 				1E7CDB8A1DE29EB1002B8999 /* BubbleSort.swift in Sources */,
 				1EAF4EBA240189A60079AA6F /* 82   Remove Duplicated from Sorted List 2.swift in Sources */,

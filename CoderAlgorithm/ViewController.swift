@@ -101,6 +101,8 @@ extension ViewController {
         leetCode143()
         //86  分隔链表
         leetCode86()
+        //160 相交链表
+        leetCode160()
     }
 
 }
@@ -288,6 +290,31 @@ extension ViewController {
         problems.append(title)
         let list = createLinkList(with: [1,2,3])
         let result = partition(list?.head, 5)
+        print("output:\(String(describing: result)) \n")
+    }
+    
+    func leetCode160() {
+        let title = "LeetCode-160 Intersection of two linkedlist "
+        print(title)
+        problems.append(title)
+            //创建两个链表节点
+            let n1 = ListNode(6)
+            let n2 = ListNode(4)
+            let n3 = ListNode(3)
+
+//            n1.next = n2
+//            n2.next = n3
+            
+            let n4 = ListNode(5)
+            let n5 = ListNode(6)
+            let n6 = ListNode(4)
+            let n7 = ListNode(7)
+
+            n4.next = n5
+//            n5.next = n2
+//            n6.next = n2
+
+        let result = getIntersectionNode(n1, n4)
         print("output:\(String(describing: result)) \n")
     }
 }
