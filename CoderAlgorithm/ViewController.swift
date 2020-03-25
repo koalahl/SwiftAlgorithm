@@ -310,7 +310,7 @@ extension ViewController {
             let n6 = ListNode(4)
             let n7 = ListNode(7)
 
-            n4.next = n5
+            n4.next = n1
 //            n5.next = n2
 //            n6.next = n2
 
