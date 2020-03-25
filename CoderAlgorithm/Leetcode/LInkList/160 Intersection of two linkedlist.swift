@@ -22,19 +22,16 @@ func getIntersectionNode(_ headA: ListNode<Int>?, _ headB: ListNode<Int>?) -> Li
     while curr1 !== curr2 {
         curr1 = curr1?.next
         curr2 = curr2?.next
-
+        
+        if curr1 === curr2 {
+            return curr2
+        }
+        
         if curr1 == nil {
             curr1 = headB
         }
         if curr2 == nil {
             curr2 = headA
-        }
-        if curr1 === curr2 {
-            return curr2
-        }
-        //当交替遍历一次 ，两个同时到链表尾时，说明没有交点
-        if curr1?.next == nil && curr2?.next == nil {
-            return nil
         }
     }
     return curr1
