@@ -20,6 +20,8 @@
 		1E34E42A1CE36E49004F5C98 /* 1 Two Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */; };
 		1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */; };
 		1E486E1B2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E486E1A2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift */; };
+		1E48AEAB242859B5004473D5 /* 104 maximum-depth-of-binary-tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48AEAA242859B5004473D5 /* 104 maximum-depth-of-binary-tree.swift */; };
+		1E48AEAD24289CE6004473D5 /* findMiddleNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */; };
 		1E5884B7241005B700D8B1C9 /* 11 Container with most water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */; };
 		1E5884B9241012F000D8B1C9 /* 15 3sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5884B8241012F000D8B1C9 /* 15 3sum.swift */; };
 		1E745486240EB4F600F8464D /* 86  Partition LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */; };
@@ -83,6 +85,8 @@
 		1E34E4291CE36E49004F5C98 /* 1 Two Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1 Two Sum.swift"; sourceTree = "<group>"; };
 		1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDiffChar.swift; sourceTree = "<group>"; };
 		1E486E1A2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19   Remove Nth Node from end of List.swift"; sourceTree = "<group>"; };
+		1E48AEAA242859B5004473D5 /* 104 maximum-depth-of-binary-tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "104 maximum-depth-of-binary-tree.swift"; sourceTree = "<group>"; };
+		1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findMiddleNum.swift; sourceTree = "<group>"; };
 		1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11 Container with most water.swift"; sourceTree = "<group>"; };
 		1E5884B8241012F000D8B1C9 /* 15 3sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15 3sum.swift"; sourceTree = "<group>"; };
 		1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "86  Partition LinkedList.swift"; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 				1E5884B8241012F000D8B1C9 /* 15 3sum.swift */,
 				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
 				1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */,
+				1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				1EEADCEC2426778D00EED6DA /* 144 Tree preorder traversal.swift */,
 				1EEADCEE24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift */,
 				1EEADCF024267EE700EED6DA /* 145 Tree postOrder Traserval.swift */,
+				1E48AEAA242859B5004473D5 /* 104 maximum-depth-of-binary-tree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				1EEADCEF24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift in Sources */,
 				1E75DA8223A6407F00642D95 /* 92   ReverseLinklist2.swift in Sources */,
 				1E486E1B2401AF7F006A19E5 /* 19   Remove Nth Node from end of List.swift in Sources */,
+				1E48AEAB242859B5004473D5 /* 104 maximum-depth-of-binary-tree.swift in Sources */,
 				1E7CDB8D1DE29EB1002B8999 /* QuickSort.swift in Sources */,
 				1E7CDB8B1DE29EB1002B8999 /* BucketSort.swift in Sources */,
 				1E7CDB8C1DE29EB1002B8999 /* InsertSort.swift in Sources */,
@@ -424,6 +431,7 @@
 				1E745486240EB4F600F8464D /* 86  Partition LinkedList.swift in Sources */,
 				1E7D029120886410008C7FA7 /* BinarySearchTree.swift in Sources */,
 				1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */,
+				1E48AEAD24289CE6004473D5 /* findMiddleNum.swift in Sources */,
 				1EEADCEB2426721B00EED6DA /* 226 Invert Binary Tree.swift in Sources */,
 				1E7CDB8A1DE29EB1002B8999 /* BubbleSort.swift in Sources */,
 				1EAF4EBA240189A60079AA6F /* 82   Remove Duplicated from Sorted List 2.swift in Sources */,

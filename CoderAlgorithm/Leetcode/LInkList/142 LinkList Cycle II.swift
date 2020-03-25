@@ -8,8 +8,6 @@
 
 import Foundation
 
-var set = Set<Int>()
-
 /**
  142. 环形链表 II
  给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
@@ -24,6 +22,7 @@ var set = Set<Int>()
  输出：tail connects to node index 1
  解释：链表中有一个环，其尾部连接到第二个节点。
  */
+var set = Set<Int>()
 func detectCycle(_ head: ListNode<Int>?, _ pos: Int) -> ListNode<Int>? {
     if head == nil || head?.next == nil {
         return nil
@@ -73,7 +72,7 @@ func detectCycle2(_ head: ListNode<Int>?, _ pos: Int) -> ListNode<Int>? {
 //    return pt1
 }
 
-func meetNodeInCycleLinkList(_ head:ListNode<Int>?) -> ListNode<Int>? {
+private func meetNodeInCycleLinkList(_ head:ListNode<Int>?) -> ListNode<Int>? {
 
     if head == nil || head?.next == nil {
         return nil
