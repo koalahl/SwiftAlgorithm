@@ -72,6 +72,8 @@ extension ViewController {
         leetCode3()
         
         findMiddleNum()
+        
+        getMinLength()
     //MARK:  链表
         //2. Add Two Number , linkedList
         LeetCode2AddTwoNumber()
@@ -143,12 +145,21 @@ extension ViewController {
     func findMiddleNum() {
         let title = "findMiddleNum"
         print(title)
-        let nums1 = [3,2]//,5,8,9,6,11]//[1,4,5,6,8,9,6]
+        let nums1 = [3,2,5,8,9,6,11]//[1,4,5,6,8,9,6]
         let result = findNum2(nums1)
         print("output:\(result) \n")
 
     }
     
+    func getMinLength() {
+        
+        let title = "getMinLengthSubArray"
+        print(title)
+        let nums1 = [3,4,7,5,11,8,9,10]//[5,8,9,6,11]//[1,4,5,6,8,9,6]
+        let result = getMinLengthSubArray(nums1)
+        print("output:\(result) \n")
+
+    }
 }
 //MARK: String
 extension ViewController {

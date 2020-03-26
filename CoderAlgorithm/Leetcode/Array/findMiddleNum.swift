@@ -41,9 +41,7 @@ func findNum(_ array: [Int]) -> [Int] {
 }
 
 func findNum2(_ array: [Int]) -> [Int] {
-//    if array.count <= 2 {
-//        return array
-//    }
+
     let length = array.count
     //[3,2,5,8,9,6,11]
     var result = Array<Int>()
@@ -69,6 +67,6 @@ func findNum2(_ array: [Int]) -> [Int] {
             result.append(curr)
         }
     }
-    
+    //output:[5, 11]
     return result
 }

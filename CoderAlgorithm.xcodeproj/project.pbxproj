@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E11CEFE242CFCD700DCA637 /* The Shortest subArray need be sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */; };
 		1E16222624080EE30010DF7C /* 142 LinkList Cycle II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */; };
 		1E1622282408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1622272408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift */; };
 		1E1E6A76242B88C600A09CFC /* 160 Intersection of two linkedlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The Shortest subArray need be sorted.swift"; sourceTree = "<group>"; };
 		1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "142 LinkList Cycle II.swift"; sourceTree = "<group>"; };
 		1E1622272408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21   Merge Two Sorted LinkList.swift"; sourceTree = "<group>"; };
 		1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "160 Intersection of two linkedlist.swift"; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				1EABA654208F24E8005DA18B /* 88 MergeTwoSortedArray.swift */,
 				1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */,
 				1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */,
+				1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				1E1622282408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift in Sources */,
 				1E34E40A1CE36D12004F5C98 /* ViewController.swift in Sources */,
 				1EB9C5292402C16C0063E216 /* 61   Rotate LinkList.swift in Sources */,
+				1E11CEFE242CFCD700DCA637 /* The Shortest subArray need be sorted.swift in Sources */,
 				1E29CDC224056D3C00C007E4 /* 143 Reorder LinkLIst.swift in Sources */,
 				1E5884B7241005B700D8B1C9 /* 11 Container with most water.swift in Sources */,
 				1E7F3022206BD8200044B5AD /* Heap.swift in Sources */,
