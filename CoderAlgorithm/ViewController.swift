@@ -74,6 +74,9 @@ extension ViewController {
         findMiddleNum()
         
         getMinLength()
+        //42
+        trapRainWater()
+        
     //MARK:  链表
         //2. Add Two Number , linkedList
         LeetCode2AddTwoNumber()
@@ -159,6 +162,15 @@ extension ViewController {
         let result = getMinLengthSubArray(nums1)
         print("output:\(result) \n")
 
+    }
+    
+    func trapRainWater() {
+        
+        let title = "trapRainWater"
+        print(title)
+        let nums1 = [0,1,0,2,1,0,1,3,2,1,2,1]
+        let result = trap(nums1)
+        print("output:\(result) \n")
     }
 }
 //MARK: String

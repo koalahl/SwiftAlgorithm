@@ -25,7 +25,7 @@ import Foundation
  注意：哨兵节点广泛应用于树和链表中，如伪头、伪尾、标记等，它们是纯功能的，通常不保存任何数据，其主要目的是使链表标准化，如使链表永不为空、永不无头、简化插入和删除。
  */
 func removeLinkListElements(_ head: ListNode<Int>?, _ val: Int) -> ListNode<Int>? {
-    //伪结点dummy，注意虚拟结点在swift中不能设置为nil
+    //伪结点dummy
     let dummy = ListNode(0)
     dummy.next = head
     var prev = dummy

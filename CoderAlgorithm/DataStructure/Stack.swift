@@ -44,3 +44,125 @@ public struct Stack <T>{
  
  Fun fact about stacks: Each time you call a function or a method, the CPU places the return address on a stack. When the function ends, the CPU uses that return address to jump back to the caller. That's why if you call too many functions -- for example in a recursive function that never ends -- you get a so-called "stack overflow" as the CPU stack has run out of space.
  */
+
+/**
+ 频率栈
+ 频率栈 push正常push pop需要pop频率出现最大的数字
+ */
+public class FreqStack {
+    private var arr = [Int]()
+    private var dic = [Int:Int]()
+    
+    public func push(_ item: Int) {
+        //入栈时比较元素，如果已经出现过，则增加count值，不加入数组
+        if var count = dic[item] {
+            count += 1
+            dic[item] = count
+        }else {
+            dic[item] = 1
+            arr.append(item)
+        }
+        //找出最大count，满足条件则交换栈顶元素
+        //比较新加入元素的count和当前栈顶元素的count
+        let peek = arr.last!
+        if dic[item]! > dic[peek]! {
+            let i = self.arr.index(of: item)!
+            let j = self.arr.index(of: peek)!
+            (arr[i],arr[j]) = (arr[j],arr[i])
+            
+        }
+    }
+    
+    public func pop () -> Int{
+        return arr.removeLast()
+    }
+}
+
+/** LeetCode 895 最大频率栈
+ hard
+ https://leetcode-cn.com/problems/maximum-frequency-stack/
+ 题解：
+ https://leetcode-cn.com/problems/maximum-frequency-stack/solution/java-by-yu-bin-5-2/
+ 
+*/
+public class FreqStack2 {
+    private var arr = [Int]()
+    private var dic = [Int:Int]()
+    
+    public func push(_ item: Int) {
+        //入栈时比较元素，如果已经出现过，则增加count值，不加入数组
+        if var count = dic[item] {
+            count += 1
+            dic[item] = count
+        }else {
+            dic[item] = 1
+            arr.append(item)
+        }
+        //找出最大count，满足条件则交换栈顶元素
+        //比较新加入元素的count和当前栈顶元素的count
+        let peek = arr.last!
+        if dic[item]! > dic[peek]! {
+            let i = self.arr.index(of: item)!
+            let j = self.arr.index(of: peek)!
+            (arr[i],arr[j]) = (arr[j],arr[i])
+            
+        }
+    }
+    
+    public func pop () -> Int{
+        return arr.removeLast()
+    }
+}
+
+
+/**
+ java 版
+ 
+ class FreqStack {
+     ArrayList<Stack<Integer>> freqs;
+     HashMap<Integer, Integer> item_freq;
+ 
+     public FreqStack() {
+      freqs = new ArrayList();
+      item_freq = new HashMap();
+     }
+     
+     public void push(int x) {
+         if(item_freq.get(x) == null){
+             item_freq.put(x, 1);
+         }else{
+             item_freq.put(x, item_freq.get(x) + 1);
+         }
+
+         if(freqs.size() < item_freq.get(x)){
+             Stack<Integer> s = new Stack<>();
+             s.push(x);
+             freqs.add(s);
+         }else{
+             freqs.get(item_freq.get(x) - 1).push(x);
+         }
+     }
+     
+     public int pop() {
+         if(freqs.size() == 0){
+             return -1;
+         }
+         Stack<Integer> innerStack = freqs.get(freqs.size() - 1);
+          int numToPop = innerStack.pop();
+          if(innerStack.size() == 0){
+              freqs.remove(freqs.size() - 1);
+          }
+          item_freq.put(numToPop, item_freq.get(numToPop) - 1);
+
+          return numToPop;
+     }
+ }
+
+ 作者：yu-bin-5
+ 链接：https://leetcode-cn.com/problems/maximum-frequency-stack/solution/java-by-yu-bin-5-2/
+ 来源：力扣（LeetCode）
+ 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ 
+ 
+ 
+ */

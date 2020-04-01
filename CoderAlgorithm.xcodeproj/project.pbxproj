@@ -57,6 +57,7 @@
 		1EEADCEF24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCEE24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift */; };
 		1EEADCF124267EE700EED6DA /* 145 Tree postOrder Traserval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEADCF024267EE700EED6DA /* 145 Tree postOrder Traserval.swift */; };
 		1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB6BA1205D0980003E4027 /* MergeSort.swift */; };
+		1EECA1EE242DA18A007A3CF1 /* 42 trap rain water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EECA1ED242DA18A007A3CF1 /* 42 trap rain water.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		1EEADCEE24267EBC00EED6DA /* 94   Tree Inorder Traserval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "94   Tree Inorder Traserval.swift"; sourceTree = "<group>"; };
 		1EEADCF024267EE700EED6DA /* 145 Tree postOrder Traserval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "145 Tree postOrder Traserval.swift"; sourceTree = "<group>"; };
 		1EEB6BA1205D0980003E4027 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		1EECA1ED242DA18A007A3CF1 /* 42 trap rain water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "42 trap rain water.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 				1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */,
 				1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */,
 				1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */,
+				1EECA1ED242DA18A007A3CF1 /* 42 trap rain water.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */,
 				1EEADCE92426704100EED6DA /* 100 Is same Tree.swift in Sources */,
 				1E94CE6D2070B4DA00625560 /* HeapSort.swift in Sources */,
+				1EECA1EE242DA18A007A3CF1 /* 42 trap rain water.swift in Sources */,
 				1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */,
 				1EABA655208F24E8005DA18B /* 88 MergeTwoSortedArray.swift in Sources */,
 				1E34E42A1CE36E49004F5C98 /* 1 Two Sum.swift in Sources */,
