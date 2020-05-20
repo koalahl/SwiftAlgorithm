@@ -108,6 +108,8 @@ extension ViewController {
         leetCode86()
         //160 相交链表
         leetCode160()
+        //24 两两交换链表中的节点
+        leetCode24()
     }
 
 }
@@ -229,7 +231,7 @@ extension ViewController {
         problems.append(title)
         let (l1,_) = creatLinkedList()
         let result = removeLinkListElements(l1.head,1)
-        print("output:\(result) \n")
+        print("output:\(String(describing: result)) \n")
     }
     
     func leetcode83() {
@@ -239,7 +241,7 @@ extension ViewController {
         let (l1,_) = creatLinkedList()
 //        let result = deleteDuplicates(l1.head)
         let result = removeDuplicateNodes(l1.head)
-        print("output:\(result) \n")
+        print("output:\(String(describing: result)) \n")
 
     }
     
@@ -249,7 +251,7 @@ extension ViewController {
         problems.append(title)
         let (l1,_) = creatLinkedList()
         let result = deleteDuplicatesAll(l1.head)
-        print("output:\(result) \n")
+        print("output:\(String(describing: result)) \n")
 
     }
     
@@ -259,7 +261,7 @@ extension ViewController {
         problems.append(title)
         let (l1,_) = creatLinkedList()
         let result = removeNthFromEnd(l1.head, 2)
-        print("output:\(result) \n")
+        print("output:\(String(describing: result)) \n")
     }
 
     func leetcode21() {
@@ -268,7 +270,7 @@ extension ViewController {
         problems.append(title)
         let (l1,l2) = creatLinkedList()
         let result = mergeTwoLists(l1.head,l2.head)
-        print("output:\(result) \n")
+        print("output:\(String(describing: result)) \n")
     }
     
     func leetcode61() {
@@ -287,6 +289,16 @@ extension ViewController {
         let list = createLinkList(with: [1,2,3,4])
         let _ = reorderList(list?.head)
         print("output:\(list) \n")
+    }
+    
+    
+    func leetCode24() {
+        let title = "LeetCode-24 swap list "
+        print(title)
+        problems.append(title)
+        let list = createLinkList(with: [1,2,3,4])
+        let result = swapPairs(list?.head)
+        print("output:\(result) \n")
     }
     
     func leetCode141() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1112CF24757A1B0002C1CD /* 24 swap linklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1112CE24757A1B0002C1CD /* 24 swap linklist.swift */; };
 		1E11CEFE242CFCD700DCA637 /* The Shortest subArray need be sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */; };
 		1E16222624080EE30010DF7C /* 142 LinkList Cycle II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */; };
 		1E1622282408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1622272408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1112CE24757A1B0002C1CD /* 24 swap linklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24 swap linklist.swift"; sourceTree = "<group>"; };
 		1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The Shortest subArray need be sorted.swift"; sourceTree = "<group>"; };
 		1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "142 LinkList Cycle II.swift"; sourceTree = "<group>"; };
 		1E1622272408363C0010DF7C /* 21   Merge Two Sorted LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21   Merge Two Sorted LinkList.swift"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */,
 				1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */,
 				1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */,
+				1E1112CE24757A1B0002C1CD /* 24 swap linklist.swift */,
 			);
 			path = LInkList;
 			sourceTree = "<group>";
@@ -340,7 +343,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = HanLiu;
 				TargetAttributes = {
 					1E34E4031CE36D11004F5C98 = {
@@ -358,10 +361,9 @@
 			};
 			buildConfigurationList = 1E34E3FF1CE36D11004F5C98 /* Build configuration list for PBXProject "CoderAlgorithm" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -442,6 +444,7 @@
 				1E745486240EB4F600F8464D /* 86  Partition LinkedList.swift in Sources */,
 				1E7D029120886410008C7FA7 /* BinarySearchTree.swift in Sources */,
 				1E36CBAC207340C600B7AD3F /* FindDiffChar.swift in Sources */,
+				1E1112CF24757A1B0002C1CD /* 24 swap linklist.swift in Sources */,
 				1E48AEAD24289CE6004473D5 /* findMiddleNum.swift in Sources */,
 				1E1E6A76242B88C600A09CFC /* 160 Intersection of two linkedlist.swift in Sources */,
 				1EEADCEB2426721B00EED6DA /* 226 Invert Binary Tree.swift in Sources */,
@@ -493,19 +496,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -533,6 +545,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -541,19 +554,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -574,6 +596,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -592,7 +615,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -608,7 +631,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.starFox.CoderAlgorithm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -621,7 +644,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starFox.CoderAlgorithmTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoderAlgorithm.app/CoderAlgorithm";
 			};
 			name = Debug;
@@ -635,7 +658,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starFox.CoderAlgorithmTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoderAlgorithm.app/CoderAlgorithm";
 			};
 			name = Release;

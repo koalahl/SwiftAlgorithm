@@ -61,6 +61,45 @@ func getMinLengthSubArray(_ array: [Int]) -> [Int] {
 
 
 
+func getMinLengthSubArray2(_ array: [Int]) -> [Int] {
+    let length = array.count
+    if length <= 2 {
+        return []
+    }
+    
+    //1.
+    var min_right = array[length - 1]
+    var minIndex = -1
+    for (i,_) in array[0...length-2].enumerated().reversed(){
+        if array[i] > min_right {
+            minIndex = i
+        }else {
+            min_right = array[i]
+        }
+    }
+    //array is sorted
+    if minIndex == -1 {
+        return []
+    }
+    
+    //2.
+    var max_left = array[0]
+    var maxIndex = -1
+    for (i,_) in array[1...length-1].enumerated() {
+        if array[i] > max_left {
+            max_left = array[i]
+        }else {
+            maxIndex = i
+        }
+    }
+    
+    
+    let arr = array[minIndex...maxIndex]
+    return Array(arr)
+    
+}
+
+
 
 
 
