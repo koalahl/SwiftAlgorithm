@@ -32,7 +32,7 @@ func swapPairs(_ head: ListNode<Int>?) -> ListNode<Int>? {
         curr?.next = temp
         //连接前后两对
         prev?.next = next
-        //保存
+        //保存,将成为上一对的尾
         prev = curr
         //重新赋值到下一对
         curr = temp
