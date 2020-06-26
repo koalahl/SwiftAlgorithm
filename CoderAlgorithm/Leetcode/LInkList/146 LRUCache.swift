@@ -28,6 +28,11 @@ import Foundation
 
  这样以来，我们首先使用哈希表进行定位，找出缓存项在双向链表中的位置，随后将其移动到双向链表的头部，即可在 O(1)O(1) 的时间内完成 get 或者 put 操作。
 
+ 进阶：增加缓存删除策略
+ 三个维度：
+ 1 时间 age：比如清除时间大于30天的缓存
+ 2 容量 cost：比如清除缓存，直到整个缓存容量小于500MB
+ 3 数量 count：比如清除缓存，直到缓存数小于100条
  */
 
 //先定义双向链表节点
@@ -83,6 +88,21 @@ class LRUCache {
             }
         }
     }
+    
+    //MARK: 清除策略
+    //1 时间 age：比如清除时间大于30天的缓存
+    func removeCacheBeforTime() -> Bool {
+        return true
+    }
+    // 2 容量 cost：比如清除缓存，直到整个缓存容量小于500MB
+    func removeCacheLessThanVolume(_ volume:Float) -> Bool {
+        return true
+    }
+    // 3 数量 count：比如清除缓存，直到缓存数小于100条
+    func removeCacheLessThanCapacity(_ capacity:Int) -> Bool {
+        return true
+    }
+    
 
     //移动已存在的节点到头部,先删除原有的，再插入
     private func moveToHead(node:LRUCacheDLinkNode) {
