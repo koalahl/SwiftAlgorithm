@@ -14,6 +14,7 @@
 		1E1E6A76242B88C600A09CFC /* 160 Intersection of two linkedlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */; };
 		1E29CDC224056D3C00C007E4 /* 143 Reorder LinkLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */; };
 		1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */; };
+		1E2DD77124A5D88A00A1DD35 /* 146 LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DD77024A5D88A00A1DD35 /* 146 LRUCache.swift */; };
 		1E34E4081CE36D12004F5C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4071CE36D12004F5C98 /* AppDelegate.swift */; };
 		1E34E40A1CE36D12004F5C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34E4091CE36D12004F5C98 /* ViewController.swift */; };
 		1E34E40D1CE36D12004F5C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E34E40B1CE36D12004F5C98 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "160 Intersection of two linkedlist.swift"; sourceTree = "<group>"; };
 		1E29CDC124056D3C00C007E4 /* 143 Reorder LinkLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "143 Reorder LinkLIst.swift"; sourceTree = "<group>"; };
 		1E29CDC324056E0700C007E4 /* 141 LinkList Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "141 LinkList Cycle.swift"; sourceTree = "<group>"; };
+		1E2DD77024A5D88A00A1DD35 /* 146 LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "146 LRUCache.swift"; sourceTree = "<group>"; };
 		1E34E4041CE36D11004F5C98 /* CoderAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E34E4071CE36D12004F5C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E34E4091CE36D12004F5C98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */,
 				1E1E6A75242B88C600A09CFC /* 160 Intersection of two linkedlist.swift */,
 				1E1112CE24757A1B0002C1CD /* 24 swap linklist.swift */,
+				1E2DD77024A5D88A00A1DD35 /* 146 LRUCache.swift */,
 			);
 			path = LInkList;
 			sourceTree = "<group>";
@@ -348,7 +351,7 @@
 				TargetAttributes = {
 					1E34E4031CE36D11004F5C98 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 5BD5HJ4427;
+						DevelopmentTeam = 8GV75LUM29;
 						LastSwiftMigration = 1010;
 					};
 					1E34E4171CE36D12004F5C98 = {
@@ -419,6 +422,7 @@
 				1E7CDB8B1DE29EB1002B8999 /* BucketSort.swift in Sources */,
 				1E7CDB8C1DE29EB1002B8999 /* InsertSort.swift in Sources */,
 				1E8B7A911DEBE04B00F765C1 /* SelectionSort.swift in Sources */,
+				1E2DD77124A5D88A00A1DD35 /* 146 LRUCache.swift in Sources */,
 				1E7CDB881DE29EB1002B8999 /* Stack.swift in Sources */,
 				1EE3AE6920959714002FB78C /* 3 FindLongestSubstring.swift in Sources */,
 				1EB9C5272402B8DC0063E216 /* 328 Odd Even LinkList.swift in Sources */,
@@ -607,7 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 5BD5HJ4427;
+				DEVELOPMENT_TEAM = 8GV75LUM29;
 				INFOPLIST_FILE = CoderAlgorithm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -624,7 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 5BD5HJ4427;
+				DEVELOPMENT_TEAM = 8GV75LUM29;
 				INFOPLIST_FILE = CoderAlgorithm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

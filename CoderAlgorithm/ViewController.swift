@@ -110,6 +110,8 @@ extension ViewController {
         leetCode160()
         //24 两两交换链表中的节点
         leetCode24()
+        //LRU Cache
+        leetCode146()
     }
 
 }
@@ -351,6 +353,18 @@ extension ViewController {
 
         let result = getIntersectionNode(n1, n4)
         print("output:\(String(describing: result)) \n")
+    }
+    
+    func leetCode146() {
+        let title = "LeetCode-146 LRUCache "
+        print(title)
+
+        let lru = LRUCache(2)
+        lru.put(1, 1)
+        lru.put(2, 2)
+        let value = lru.get(1)
+        print(value)
+        print(lru)
     }
 }
 
