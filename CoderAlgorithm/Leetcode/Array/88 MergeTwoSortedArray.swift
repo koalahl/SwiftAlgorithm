@@ -15,7 +15,7 @@ public func mergeTwoSortedArray(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], 
     
     var k = 0
     var arr = [Int]()
-
+    
     for j in 0..<n {
         for i in k..<m {
             if nums1[i] == 0 {
@@ -91,4 +91,25 @@ public func mergeTwoSortedArrayUsingQuickSort(_ nums1: inout [Int], _ m: Int, _ 
     //在用快速排序
     quickSortLomuto(array: &nums1, low: 0, high: nums1.count-1)
     
+}
+
+/// 预先不补位
+func merge4(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) -> [Int]{
+    var ans = [Int]()
+    var i = m - 1
+    var j = n - 1
+    while i >= 0 && j >= 0 {
+        if nums1[i] > nums2[j] {
+            ans.insert(nums1[i], at: 0)
+            i -= 1
+        }else {
+            ans.insert(nums2[j], at: 0)
+            j -= 1
+        }
+    }
+    let rest = nums1.isEmpty ? nums2 : nums1
+    for e in rest {
+        ans.insert(e, at: 0)
+    }
+    return ans
 }
