@@ -45,3 +45,53 @@ func invertTree(_ root: TreeNode?) -> TreeNode? {
     
     return root
 }
+
+func invertTree2(_ root:TreeNode?) ->TreeNode? {
+    guard let root = root else { return nil }
+    
+    var queue = Queue<TreeNode>()
+    queue.enqueue(element: root)
+    
+    while !queue.isEmpty {
+        //弹出一个节点
+        let curr = queue.dequeue()
+        //swap
+        let temp = curr?.left
+        curr?.left = curr?.right
+        curr?.right = temp
+        //再入队
+        if let left = curr?.left {
+            queue.enqueue(element: left)
+        }
+        if let right = curr?.right {
+            queue.enqueue(element: right)
+        }
+    }
+    
+    return root
+}
+
+func invertTree3(_ root:TreeNode?) ->TreeNode? {
+    guard let root = root else { return nil }
+    
+    var array = Array<TreeNode>()
+    array.append(root)
+    
+    while !array.isEmpty {
+        //弹出一个节点
+        let curr = array.removeLast()
+        //swap
+        let temp = curr.left
+        curr.left = curr.right
+        curr.right = temp
+        //再入队
+        if let left = curr.left {
+            array.append(left)
+        }
+        if let right = curr.right {
+            array.append(right)
+        }
+    }
+    
+    return root
+}
