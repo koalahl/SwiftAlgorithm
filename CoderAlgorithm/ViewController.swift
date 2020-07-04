@@ -132,10 +132,16 @@ extension ViewController {
         let title = "LeetCode-88 Merge Two Sorted Array"
         print(title)
         problems.append(title)
-        var nums1 = [1,2,3,0,0,0];//[1,2,5,6,8,9]
-        let nums2 = [2,5,6];//[3,4,6,7,10]
+        var nums1 = [1,2,3,0,0,0];//
+        let nums2 = [2,5,6]//[3,4,6,7,10]
         mergeTwoSortedArray3(&nums1, 3, nums2, nums2.count)
         print("output:\(nums1)\n")
+        //第二种，followup 延伸 nums1不补位
+        var nums3 = [1,2,5,6,8,9]//[1,2,3,0,0,0];//
+        let nums4 = [2,5,6]//[3,4,6,7,10]
+        let result = mergeTwoSortedArray5(&nums3, nums4)
+        print("output:\(result)\n")
+
 //        mergeTwoSortedArrayUsingQuickSort(&nums1, nums1.count, nums2, nums2.count)
 //        print(nums1)
     }

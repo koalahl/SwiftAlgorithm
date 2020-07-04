@@ -94,10 +94,16 @@ public func mergeTwoSortedArrayUsingQuickSort(_ nums1: inout [Int], _ m: Int, _ 
 }
 
 /// 预先不补位
-func merge4(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) -> [Int]{
+//[1,2,5,6,8,9]
+//[2,5,6]
+//[2,5,5,6,6,8,9]
+//从小到大排      while + ans.insert(nums1[i], at: 0) 是n^2的时间复杂度
+//从大到小来
+
+public func mergeTwoSortedArray4(_ nums1: inout [Int], _ nums2: [Int]) -> [Int]{
     var ans = [Int]()
-    var i = m - 1
-    var j = n - 1
+    var i = nums1.count - 1
+    var j = nums2.count - 1
     while i >= 0 && j >= 0 {
         if nums1[i] > nums2[j] {
             ans.insert(nums1[i], at: 0)
@@ -107,9 +113,33 @@ func merge4(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) -> [Int]{
             j -= 1
         }
     }
-    let rest = nums1.isEmpty ? nums2 : nums1
-    for e in rest {
-        ans.insert(e, at: 0)
+    let rest = i > 0 ? nums1[0...i] : nums2[0...j]
+    var restIndex = i > 0 ?i : j
+    while restIndex >= 0 {
+        ans.insert(rest[restIndex], at: 0)
+        restIndex -= 1
     }
     return ans
+}
+
+public func mergeTwoSortedArray5(_ nums1: inout [Int], _ nums2: [Int]) -> [Int]{
+    var ans = [Int]()
+    var i = nums1.count - 1
+    var j = nums2.count - 1
+    while i >= 0 && j >= 0 {
+        if nums1[i] > nums2[j] {
+            ans.append((nums1[i]))
+            i -= 1
+        }else {
+            ans.append((nums2[j]))
+            j -= 1
+        }
+    }
+    let rest = i > 0 ? nums1[0...i] : nums2[0...j]
+    var restIndex = i > 0 ?i : j
+    while restIndex >= 0 {
+        ans.append(rest[restIndex])
+        restIndex -= 1
+    }
+    return ans.reversed()
 }
