@@ -28,6 +28,7 @@
 		1E48AEAD24289CE6004473D5 /* findMiddleNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */; };
 		1E5884B7241005B700D8B1C9 /* 11 Container with most water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */; };
 		1E5884B9241012F000D8B1C9 /* 15 3sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5884B8241012F000D8B1C9 /* 15 3sum.swift */; };
+		1E5A6D3224AE4C4D00BC5C33 /* 344 Reverse String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A6D3124AE4C4D00BC5C33 /* 344 Reverse String.swift */; };
 		1E745486240EB4F600F8464D /* 86  Partition LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */; };
 		1E75DA7C23A6088500642D95 /* LindedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA7B23A6088500642D95 /* LindedList.swift */; };
 		1E75DA8023A6356600642D95 /* 206 Reverse LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */; };
@@ -98,6 +99,7 @@
 		1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findMiddleNum.swift; sourceTree = "<group>"; };
 		1E5884B6241005B700D8B1C9 /* 11 Container with most water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11 Container with most water.swift"; sourceTree = "<group>"; };
 		1E5884B8241012F000D8B1C9 /* 15 3sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15 3sum.swift"; sourceTree = "<group>"; };
+		1E5A6D3124AE4C4D00BC5C33 /* 344 Reverse String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "344 Reverse String.swift"; sourceTree = "<group>"; };
 		1E745485240EB4F600F8464D /* 86  Partition LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "86  Partition LinkedList.swift"; sourceTree = "<group>"; };
 		1E75DA7B23A6088500642D95 /* LindedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LindedList.swift; sourceTree = "<group>"; };
 		1E75DA7F23A6356600642D95 /* 206 Reverse LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "206 Reverse LinkedList.swift"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				1EE3AE6820959714002FB78C /* 3 FindLongestSubstring.swift */,
 				1E36CBAB207340C600B7AD3F /* FindDiffChar.swift */,
+				1E5A6D3124AE4C4D00BC5C33 /* 344 Reverse String.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				1ECC446E228C6C4C0094AD40 /* 2      Add Two Number.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
+				1E5A6D3224AE4C4D00BC5C33 /* 344 Reverse String.swift in Sources */,
 				1EEADCF124267EE700EED6DA /* 145 Tree postOrder Traserval.swift in Sources */,
 				1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */,
 				1E75DA8423A645E700642D95 /* 234 PalindromeLinkedList.swift in Sources */,
