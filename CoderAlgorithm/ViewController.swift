@@ -168,7 +168,7 @@ extension ViewController {
         
         let title = "getMinLengthSubArray"
         print(title)
-        let nums1 = [3,4,7,5,11,8,9,10]//[5,8,9,6,11]//[1,4,5,6,8,9,6]
+        let nums1 = [5,8,9,6,11]//[3,4,7,5,11,8,9,10]//[1,4,5,6,8,9,6]
         let result = getMinLengthSubArray(nums1)
         print("output:\(result) \n")
 
@@ -323,7 +323,7 @@ extension ViewController {
         print(title)
         problems.append(title)
         let list = createCycleLinkList(with: [3,2,0,-4], pos:1)
-        let cyclenode = detectCycle2(list?.head, 1)//这个pos入参没用
+        let cyclenode = detectCycle3(list?.head, 1)//这个pos入参没用
         print("output:\(String(describing: cyclenode?.val)) \n")
     }
     

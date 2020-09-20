@@ -62,14 +62,6 @@ func detectCycle2(_ head: ListNode<Int>?, _ pos: Int) -> ListNode<Int>? {
     }
     return nil
     
-//    if meetnode === nil {
-//        return nil
-//    }
-//    while pt1 !== pt2 {
-//        pt1 = pt1?.next
-//        pt2 = pt2?.next
-//    }
-//    return pt1
 }
 
 private func meetNodeInCycleLinkList(_ head:ListNode<Int>?) -> ListNode<Int>? {
@@ -91,4 +83,41 @@ private func meetNodeInCycleLinkList(_ head:ListNode<Int>?) -> ListNode<Int>? {
         }
     }
     return nil
+}
+
+func detectCycle3(_ head: ListNode<Int>?,_ pos: Int) -> ListNode<Int>? {
+    if head == nil || head?.next == nil {
+        return nil
+    }
+    let meetnode = meetNode(head)
+
+    var pt1 = head
+    var pt2 = meetnode
+
+    while pt1 !=  nil && pt2 != nil {
+        if pt1 === pt2 {
+            return pt1
+        }
+        pt1 = pt1?.next
+        pt2 = pt2?.next
+    }
+    return nil
+}
+
+private func meetNode(_ head: ListNode<Int>?) -> ListNode<Int>? {
+//    if head == nil || head?.next == nil {
+//        return nil
+//    }
+    
+    var slow = head
+    var fast = head
+    while fast !== nil && fast?.next !== nil {
+        slow = slow?.next
+        fast = fast?.next?.next
+        if slow === fast {
+            return slow
+        }
+    }
+    return nil
+
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1090AF24B418EB00BCBDAC /* 42 offer subArrayMaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1090AE24B418EA00BCBDAC /* 42 offer subArrayMaxSum.swift */; };
+		1E1090B124B4A1B000BCBDAC /* findOnceNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1090B024B4A1B000BCBDAC /* findOnceNumber.swift */; };
 		1E1112CF24757A1B0002C1CD /* 24 swap linklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1112CE24757A1B0002C1CD /* 24 swap linklist.swift */; };
 		1E11CEFE242CFCD700DCA637 /* The Shortest subArray need be sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */; };
 		1E16222624080EE30010DF7C /* 142 LinkList Cycle II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */; };
@@ -74,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1090AE24B418EA00BCBDAC /* 42 offer subArrayMaxSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "42 offer subArrayMaxSum.swift"; sourceTree = "<group>"; };
+		1E1090B024B4A1B000BCBDAC /* findOnceNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findOnceNumber.swift; sourceTree = "<group>"; };
 		1E1112CE24757A1B0002C1CD /* 24 swap linklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24 swap linklist.swift"; sourceTree = "<group>"; };
 		1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The Shortest subArray need be sorted.swift"; sourceTree = "<group>"; };
 		1E16222524080EE30010DF7C /* 142 LinkList Cycle II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "142 LinkList Cycle II.swift"; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 				1E48AEAC24289CE6004473D5 /* findMiddleNum.swift */,
 				1E11CEFD242CFCD700DCA637 /* The Shortest subArray need be sorted.swift */,
 				1EECA1ED242DA18A007A3CF1 /* 42 trap rain water.swift */,
+				1E1090AE24B418EA00BCBDAC /* 42 offer subArrayMaxSum.swift */,
+				1E1090B024B4A1B000BCBDAC /* findOnceNumber.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				1ECC446E228C6C4C0094AD40 /* 2      Add Two Number.swift in Sources */,
 				1EEB6BA2205D0980003E4027 /* MergeSort.swift in Sources */,
 				1E7CDB891DE29EB1002B8999 /* BinarySearch.swift in Sources */,
+				1E1090AF24B418EB00BCBDAC /* 42 offer subArrayMaxSum.swift in Sources */,
 				1E5A6D3224AE4C4D00BC5C33 /* 344 Reverse String.swift in Sources */,
 				1EEADCF124267EE700EED6DA /* 145 Tree postOrder Traserval.swift in Sources */,
 				1E29CDC424056E0700C007E4 /* 141 LinkList Cycle.swift in Sources */,
@@ -456,6 +463,7 @@
 				1E48AEAD24289CE6004473D5 /* findMiddleNum.swift in Sources */,
 				1E1E6A76242B88C600A09CFC /* 160 Intersection of two linkedlist.swift in Sources */,
 				1EEADCEB2426721B00EED6DA /* 226 Invert Binary Tree.swift in Sources */,
+				1E1090B124B4A1B000BCBDAC /* findOnceNumber.swift in Sources */,
 				1E7CDB8A1DE29EB1002B8999 /* BubbleSort.swift in Sources */,
 				1EAF4EBA240189A60079AA6F /* 82   Remove Duplicated from Sorted List 2.swift in Sources */,
 				1E7CDB871DE29EB1002B8999 /* Queue.swift in Sources */,
